@@ -23,10 +23,11 @@ Large: 1.8
 
 --- 02 COLORS
 
-- Primary: 
+- Primary: #51a4fb
 - Tints:
 
-- Shades: 
+- Shades:
+#1c7ed6
 
 - Accents:
 - Greys
@@ -56,4 +57,11 @@ Medium: 11px
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+}
+
+body {
+  background-color: rgb(240, 240, 240);
 }
