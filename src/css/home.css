@@ -59,3 +59,69 @@
 /**************************/
 /* HERO SECTION */
 /**************************/
+/* Container for the entire hero section */
+.section-hero {
+  position: relative;
+}
+
+/* Container for the text content and background image */
+.hero-container {
+  position: relative;
+  max-width: 120rem;
+  max-height: 42rem;
+  overflow: hidden;
+}
+
+.hero-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the alpha value to control the tint's opacity */
+}
+
+/* Background image */
+.hero-img {
+  background-size: cover;
+  width: 100%;
+}
+
+/* Container for the text content */
+.hero-text-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; /* Text color */
+  padding: 20px; /* Add padding for spacing */
+  z-index: 1;
+}
+
+/* Heading */
+.heading-primary {
+  font-size: 24px; /* Set the font size as needed */
+}
+
+/* Description */
+.hero-description {
+  margin-top: 10px; /* Add margin for spacing */
+}
+
+/* Link */
+.hero-text-box a {
+  display: block; /* Make the link a block element to take full width */
+  margin-top: 10px; /* Add margin for spacing */
+}
