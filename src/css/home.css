@@ -225,7 +225,6 @@
   line-height: 1;
   color: #fff;
   font-weight: 700;
-  margin-bottom: 3rem;
   padding: 1rem;
   padding-right: 12rem;
   border-left: 3px solid #c92a2a;
@@ -238,4 +237,6 @@
   font-size: 1.4rem;
   line-height: 1.5;
   letter-spacing: 1px;
+  padding-top: 2rem;
+  padding-right: 6rem;
 }
