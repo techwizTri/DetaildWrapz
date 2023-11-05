@@ -8,7 +8,11 @@
   align-items: center;
   font-family: oswald, sans-serif;
   font-weight: 600;
-  background: linear-gradient(180deg, black 20%, rgba(0, 0, 0, 0.867) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(0, 0, 0) 20%,
+    rgba(128, 128, 128, 0.087) 100%
+  );
   height: 8rem;
   padding: 0 12.8rem;
   position: relative;
@@ -60,6 +64,7 @@
 /**************************/
 /* HERO SECTION */
 /**************************/
+
 /* Container for the entire hero section */
 .section-hero {
   position: relative;
@@ -105,7 +110,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 850px;
+  max-width: 50rem;
   width: 100%;
   padding: 2rem;
   z-index: 4;
@@ -209,4 +214,29 @@
 .slider-ctl > .active:hover::before {
   background-color: #c92a2a;
   opacity: 1;
+}
+
+/**************************/
+/* FEATURED SECTION */
+/**************************/
+
+.heading-tertiary {
+  font-size: 64px;
+  line-height: 1;
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  padding-right: 12rem;
+  border-left: 3px solid #c92a2a;
+  letter-spacing: 2px;
+  font-family: oswald, sans-serif;
+}
+
+.step-description {
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
 }
