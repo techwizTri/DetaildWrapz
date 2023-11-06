@@ -246,6 +246,14 @@
   border-radius: 20px;
 }
 
+.step-img-box {
+  /* overflow: hidden; */
+}
+
 /**************************/
 /*  SECTION */
 /**************************/
+
+.section-book {
+  background-color: #060606d1;
+}
