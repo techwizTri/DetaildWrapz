@@ -67,6 +67,7 @@ body {
   background-color: rgba(0, 0, 0, 0.934);
   color: #fff;
   /* overflow-x: hidden; */
+  font-family: oswald, sans-serif;
 }
 
 /**************************/
@@ -76,7 +77,7 @@ body {
 .container {
   /* 1140px */
   max-width: 120rem;
-  padding: 6rem 12rem;
+  padding: 6rem 10rem;
   margin: 0 auto;
 }
 
