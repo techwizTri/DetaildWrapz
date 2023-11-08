@@ -297,11 +297,19 @@
 }
 
 .section-steps-number,
-.section-steps-btn {
+.steps-btn {
   color: #fff;
   background-color: #c92a2a;
 }
 
-.section-steps-btn {
-  border-radius: 99999px;
+.steps-description {
+  padding: 1rem;
+  font-size: 1.2rem;
 }
+
+.steps-btn {
+  border-radius: 99999px;
+  font-size: 3rem;
+}
+
+/* change to ul like omnifood */
