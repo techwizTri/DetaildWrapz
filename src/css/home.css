@@ -280,9 +280,28 @@
 }
 
 /* Steps */
+.section-steps {
+  text-align: center;
+}
+
+.section-steps-number {
+  font-size: 4rem;
+  font-weight: 700;
+  width: 6.4rem;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block; /* Make it an inline-block element */
+  text-align: center; /* Center the text horizontally within the block */
+  line-height: 6.4rem; /* Set the line-height to match the height */
+  margin: 0; /* Remove any default margin */
+}
 
 .section-steps-number,
 .section-steps-btn {
   color: #fff;
   background-color: #c92a2a;
+}
+
+.section-steps-btn {
+  border-radius: 99999px;
 }
