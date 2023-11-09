@@ -262,6 +262,23 @@
 }
 
 .steps-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 700;
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  background-color: #c92a2a;
+  color: #fff;
+  margin: auto; /* Add this line to center the .steps-number */
+}
+
+.steps-number,
+.steps-btn {
+  color: #fff;
+  background-color: #c92a2a;
 }
 
 .steps-description {
