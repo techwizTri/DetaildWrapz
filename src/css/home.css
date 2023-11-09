@@ -275,6 +275,11 @@
   margin: auto; /* Add this line to center the .steps-number */
 }
 
+.steps-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
 .steps-number,
 .steps-btn {
   color: #fff;
@@ -282,7 +287,12 @@
 }
 
 .steps-description {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.steps-btn {
+  border-radius: 9999px;
 }
 
 /* book */
