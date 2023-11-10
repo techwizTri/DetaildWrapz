@@ -254,6 +254,35 @@
 /*  SECTION */
 /**************************/
 
+.section-book {
+  /* background-color: #060606d1; */
+  background-color: rgba(255, 255, 255, 0.934);
+  color: #000;
+}
+
+.booking-description {
+  border-left: 3px solid #c92a2a;
+  padding: 1rem;
+}
+
+.booking-description h3 {
+  color: #c92a2a;
+}
+
+.booking-description h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.booking-description p {
+  width: 30%;
+  font-size: 1.2rem;
+}
+
+/**************************/
+/* HERO SECTION */
+/**************************/
+
 /* steps */
 .section-steps {
   display: grid;
@@ -311,63 +340,50 @@
   background-color: #c02626;
 }
 
-/* book */
-.section-book {
-  /* background-color: #060606d1; */
-  background-color: rgba(255, 255, 255, 0.934);
-  color: #000;
+/**************************/
+/* HERO SECTION */
+/**************************/
+/* 
+.section-start {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 12.8rem;
 }
 
-.booking-description {
-  border-left: 3px solid #c92a2a;
-  padding: 1rem;
-}
-
-.booking-description h3 {
-  color: #c92a2a;
-}
-
-.booking-description h2 {
-  font-size: 2.4rem;
-  font-weight: 700;
-}
-
-.booking-description p {
-  width: 30%;
-  font-size: 1.2rem;
-}
-
-/* Steps */
-/* .section-steps {
-  text-align: center;
-}
-
-.section-steps-number {
-  font-size: 4rem;
-  font-weight: 700;
-  width: 6.4rem;
-  border-radius: 50%;
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  line-height: 6.4rem;
-  margin: 0;
-}
-
-.section-steps-number,
-.steps-btn {
-  color: #fff;
-  background-color: #c92a2a;
-}
-
-.steps-description {
-  padding: 1rem;
-  font-size: 1.2rem;
-}
-
-.steps-btn {
-  border-radius: 99999px;
-  font-size: 3rem;
+.start-title,
+.start-description {
 } */
 
-/* change to ul like omnifood */
+.section-start {
+  background-color: #f4f4f4; /* Set your desired background color */
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.start-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.start-title {
+  margin-right: 20px; /* Adjust margin as needed */
+}
+
+.start-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.start-description {
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.start-btn {
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #007bff; /* Set your desired button color */
+  color: #fff; /* Set your desired button text color */
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
