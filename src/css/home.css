@@ -53,12 +53,12 @@
   padding: 0.8rem 2rem;
   border-radius: 99999px;
   color: #fff;
-  background-color: #c92a2ad2;
+  background-color: #c92a2abe;
 }
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  background-color: #c92a2ab0;
+  background-color: #c92a2aa4;
 }
 
 /**************************/
@@ -157,7 +157,7 @@
 
 .hero-btn:hover,
 .hero-btn:active {
-  background-color: #c92a2ab0;
+  background-color: #c92a2a9c;
 }
 
 .slider-container {
@@ -258,8 +258,8 @@
 .section-steps {
   display: grid;
   text-align: center;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 0.25em;
+  padding: 2rem;
 }
 
 .steps-number {
@@ -292,17 +292,23 @@
   color: #555;
 }
 
-.steps-btn {
+.steps-btn:link,
+.steps-btn:visited {
   display: flex;
-  align-items: center;
   justify-content: center;
-
   border-radius: 50%;
   background-color: #c92a2a;
   color: #fff;
   margin: auto;
-  padding: 0.8rem 4rem;
+  padding: 0.8rem 6rem;
   border-radius: 99999px;
+  margin-top: 0.8em;
+  text-decoration: none;
+}
+
+.steps-btn:hover,
+.steps-btn:active {
+  background-color: #c02626;
 }
 
 /* book */
