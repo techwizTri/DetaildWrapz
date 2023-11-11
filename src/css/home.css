@@ -410,3 +410,18 @@
 .review-content {
   /* padding: 2rem 8rem; */
 }
+
+.section-review .grid {
+  row-gap: 2rem;
+}
+
+.icon-container {
+  text-align: right;
+  padding-right: 8rem;
+}
+
+.review-arrow {
+  font-size: 3rem;
+}
+
+/* flex-wrap: no-wrap */
