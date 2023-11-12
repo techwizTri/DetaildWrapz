@@ -433,3 +433,22 @@
 
 .review-content {
 }
+
+.section-contact {
+}
+
+.contact-content {
+  border-left: 3px solid #c92a2a;
+  padding: 1rem;
+}
+
+.contact-info {
+  display: flex;
+}
+
+.contact-phone,
+.contact-email {
+  padding-right: 2rem;
+  padding-top: 1rem;
+  display: flex;
+}
