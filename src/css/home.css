@@ -405,6 +405,9 @@
 .start-btn:active {
   background-color: #c02626;
 }
+/**************************/
+/* HERO SECTION */
+/**************************/
 
 /* review */
 .review-content {
@@ -434,12 +437,23 @@
 .review-content {
 }
 
+/**************************/
+/* HERO SECTION */
+/**************************/
+
 .section-contact {
 }
 
 .contact-content {
   border-left: 3px solid #c92a2a;
   padding: 1rem;
+}
+
+.contact-title {
+  font-size: 2.4rem;
+}
+
+.contact-description {
 }
 
 .contact-info {
