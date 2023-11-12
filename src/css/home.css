@@ -422,6 +422,10 @@
 
 .review-arrow {
   font-size: 3rem;
+  cursor: pointer;
 }
 
 /* flex-wrap: no-wrap */
+
+.review-content {
+}
