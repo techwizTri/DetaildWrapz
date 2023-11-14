@@ -477,22 +477,21 @@
   text-align: center;
 }
 
-.faq-container {
-  padding: 6rem 32rem;
-}
-
 .faq-content {
-  text-align: left;
-  border-left: 3px solid #c92a2a;
+  text-align: right;
+  border-right: 3px solid #c92a2a;
   padding: 1rem;
 }
 
-.faq-questions-container {
+.faq-container {
   background-color: rgba(0, 0, 0, 0.05);
+  margin: 4rem 16rem;
   padding: 1rem;
+  border-radius: 2rem;
 }
 
 .faq-questions {
   display: flex;
   justify-content: space-between;
+  padding: 1rem;
 }
