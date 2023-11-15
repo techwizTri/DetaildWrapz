@@ -516,7 +516,7 @@
   padding: 1rem;
 }
 
-.faq-questions::after {
+.faq-questions:not(:last-child)::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -525,4 +525,44 @@
   width: 100%;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+/**************************/
+/* HERO SECTION */
+/**************************/
+
+.featured-container {
+  /* padding: 8rem 0; */
+  background-color: rgb(238, 237, 237);
+}
+/* 
+.featured-img::before {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+*/
+
+.section-featured {
+  position: relative;
+  background-color: rgb(238, 237, 237);
+}
+
+.featured-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Adjust the alpha value to control the darkness of the tint */
+}
+
+.featured-img {
+  width: 100%; /* Ensure the image covers the entire container */
+  height: auto;
+  display: block;
 }
