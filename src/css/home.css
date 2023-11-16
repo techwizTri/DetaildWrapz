@@ -605,3 +605,31 @@
   opacity: 50%;
   margin: 1rem;
 }
+
+.featured-text-box span {
+  color: #c92a2a;
+}
+
+/**************************/
+/* HERO SECTION */
+/**************************/
+.section-sign-up {
+  background-color: rgb(238, 237, 237);
+  color: #000;
+}
+
+.sign-up-content {
+  text-align: center;
+  padding: 4rem 12rem;
+}
+
+.sign-up-content p:first-child {
+  color: #c92a2a;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.sign-up-content p:nth-child(2) {
+  font-size: 2rem;
+  padding: 0 30rem;
+}
