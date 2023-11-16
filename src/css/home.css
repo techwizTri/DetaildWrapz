@@ -580,12 +580,14 @@
   font-size: 4rem;
   font-weight: 700;
   font-style: italic;
+  padding-top: 4rem;
 }
 
 .featured-text-box p:nth-child(2) {
   font-size: 2rem;
   font-weight: 500;
   font-style: italic;
+  padding-bottom: 4rem;
 }
 
 .featured-list-container {
@@ -601,4 +603,5 @@
   height: 3rem; /* Maintain the aspect ratio */
   display: block;
   opacity: 50%;
+  margin: 1rem;
 }
