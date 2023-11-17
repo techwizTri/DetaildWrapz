@@ -646,10 +646,20 @@
 
 .half-width {
   width: 48%; /* Adjust as needed */
+  height: 50px;
+  border: none;
+  margin-bottom: 1rem;
+  outline: none;
+  box-shadow: none;
 }
 
 .full-width {
   width: 100%;
+  height: 50px;
+  border: none;
+  margin-bottom: 1rem;
+  outline: none;
+  box-shadow: none;
 }
 
 .terms-checkbox {
