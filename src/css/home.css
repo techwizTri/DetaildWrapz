@@ -613,36 +613,55 @@
 /**************************/
 /* HERO SECTION */
 /**************************/
-.section-sign-up {
+.section-subscribe {
   background-color: rgb(238, 237, 237);
   color: #000;
 }
 
-.sign-up-content {
+.subscribe-container {
   text-align: center;
   padding: 4rem 12rem;
 }
 
-.sign-up-content p:first-child {
-  color: #c92a2a;
-  font-size: 4rem;
-  font-weight: 700;
-}
-
-.sign-up-content p:nth-child(2) {
-  font-size: 2rem;
+.subscribe-content {
   padding: 0 30rem;
 }
 
-.input-container {
-  /* text-align: center; */
-  padding: 1rem;
+.subscribe-content p:first-child {
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 1rem;
 }
 
-.sign-up-input input {
+.subscribe-content p:nth-child(2) {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.half-width {
+  width: 48%; /* Adjust as needed */
+}
+
+.full-width {
+  width: 100%;
+}
+
+.terms-checkbox {
+  display: flex;
+  text-align: left;
+}
+
+/* 
+. input {
   border: none;
 }
 
-.sign-up-input input:invalid {
+. input:invalid {
   box-shadow: none;
-}
+} */
