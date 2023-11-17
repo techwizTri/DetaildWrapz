@@ -633,3 +633,16 @@
   font-size: 2rem;
   padding: 0 30rem;
 }
+
+.input-container {
+  /* text-align: center; */
+  padding: 1rem;
+}
+
+.sign-up-input input {
+  border: none;
+}
+
+.sign-up-input input:invalid {
+  box-shadow: none;
+}
