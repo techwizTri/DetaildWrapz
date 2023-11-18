@@ -240,14 +240,33 @@
   padding-top: 2rem;
   padding-right: 6rem;
 }
-
+/* 
 .step-img {
   box-shadow: 8px 8px 14px rgba(0, 0, 0, 0.776);
   border-radius: 20px;
-}
+} */
 
 .step-img-box {
-  /* overflow: hidden; */
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.step-img {
+  width: 100%;
+  display: block;
+}
+
+.step-img-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: inherit;
+  z-index: 1; /* Ensure the pseudo-element is above the image */
 }
 
 /**************************/
@@ -514,6 +533,12 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  cursor: pointer;
+}
+
+.faq-questions:hover {
+  background-color: rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
 }
 
 .faq-questions:not(:last-child)::after {
