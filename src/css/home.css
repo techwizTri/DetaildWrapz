@@ -620,7 +620,7 @@
 
 .subscribe-container {
   text-align: center;
-  padding: 4rem 12rem;
+  padding: 2rem 12rem;
 }
 
 .subscribe-content {
@@ -649,8 +649,6 @@
   height: 50px;
   border: none;
   margin-bottom: 1rem;
-  outline: none;
-  box-shadow: none;
 }
 
 .full-width {
@@ -658,20 +656,35 @@
   height: 50px;
   border: none;
   margin-bottom: 1rem;
-  outline: none;
-  box-shadow: none;
 }
 
 .terms-checkbox {
   display: flex;
   text-align: left;
+  margin-bottom: 1rem;
 }
 
-/* 
-. input {
-  border: none;
+.terms-checkbox input[type="checkbox"] {
+  margin-right: 10px; /* Adjust as needed */
 }
 
-. input:invalid {
-  box-shadow: none;
-} */
+.subscribe-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  height: 50px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.subscribe-btn-container:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.subscribe-btn-container a {
+  text-align: center;
+  padding: 20px; /* Adjust as needed */
+  display: block;
+}
