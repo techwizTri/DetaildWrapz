@@ -8,13 +8,12 @@
   align-items: center;
   font-family: oswald, sans-serif;
   font-weight: 600;
-  background-color: rgb(21, 21, 21);
-
+  background-color: rgba(21, 21, 21, 0.918);
   height: 8rem;
   padding: 0 12.8rem;
   position: sticky;
-  top: 0; /* Stick to the top of the viewport */
-  z-index: 100; /* Add z-index if needed */
+  top: 0;
+  z-index: 100;
 }
 
 .logo {
@@ -25,21 +24,19 @@
 /* NAVIGATION */
 /**************************/
 
-/* Your existing styles for logo and navigation links */
-
 .main-nav-list {
-  list-style: none;
   display: flex;
   align-items: center;
+  list-style: none;
   gap: 3.2rem;
 }
 
 .main-nav-link:link,
 .main-nav-link:visited {
   display: inline-block;
-  text-decoration: none;
-  color: #fff;
   font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
   transition: all 0.3s;
 }
 
@@ -64,21 +61,19 @@
 /* HERO SECTION */
 /**************************/
 
-/* Container for the entire hero section */
 .section-hero {
   position: relative;
 }
 
-/* Container for the text content and background image */
 .hero-container {
-  max-width: 120rem;
-  max-height: 40rem;
-  overflow: hidden;
   display: flex-start;
   justify-content: center;
   align-items: center;
+  max-width: 120rem;
+  max-height: 40rem;
   font-family: oswald, sans-serif;
   color: #fff;
+  overflow: hidden;
 }
 
 .hero-container::before {
@@ -88,21 +83,14 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /* Adjust the alpha value to control the tint's opacity */
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* Background image */
 .hero-container img {
   width: auto;
   height: auto;
 }
 
-/* Container for the text content */
 .hero-text-box {
   position: absolute;
   text-align: center;
@@ -115,9 +103,8 @@
   z-index: 4;
 }
 
-/* Heading */
 .heading-primary {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 700;
   color: #fff;
   line-height: 0.9;
@@ -127,7 +114,6 @@
   font-weight: 700;
 }
 
-/* Description */
 .hero-description {
   padding: 1rem 6rem;
   margin-bottom: 4rem;
@@ -139,15 +125,14 @@
   margin-bottom: 1rem;
 }
 
-/* Link */
 .hero-btn {
   display: inline-block;
-  color: #fff;
-  border: 2px solid #c92a2ad2;
-  background-color: #000;
-  font-weight: 700;
-  letter-spacing: 1px;
   font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #000;
+  border: 2px solid #c92a2ad2;
+  letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
   padding: 1rem;
@@ -165,9 +150,9 @@
 
 .slider-ctl {
   display: flex;
-  list-style-type: none;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  list-style-type: none;
   vertical-align: bottom;
 }
 .slider-ctl li {
@@ -191,12 +176,10 @@
   transition: all 0.25s cubic-bezier(1, 0.25, 0.25, 1);
 }
 
-/* Define a class that sets the hover effect for the ::before pseudo-element */
 .slider-ctl li:hover::before {
   opacity: 0.7;
 }
 
-/* Select the .active class within the .slider-ctl container, not the <li> elements */
 .slider-ctl > .active::before {
   display: block;
   content: "";
@@ -216,34 +199,29 @@
 }
 
 /**************************/
-/* FEATURED SECTION */
+/* SERVICE SECTION */
 /**************************/
 
 .heading-tertiary {
-  font-size: 64px;
-  line-height: 1;
-  color: #fff;
+  font-size: 4rem;
   font-weight: 700;
+  font-family: oswald, sans-serif;
+  color: #fff;
+  line-height: 1;
   padding: 1rem;
   padding-right: 12rem;
   border-left: 3px solid #c92a2a;
   letter-spacing: 2px;
-  font-family: oswald, sans-serif;
 }
 
 .step-description {
-  color: #fff;
   font-size: 1.4rem;
+  color: #fff;
   line-height: 1.5;
   letter-spacing: 1px;
   padding-top: 2rem;
   padding-right: 6rem;
 }
-/* 
-.step-img {
-  box-shadow: 8px 8px 14px rgba(0, 0, 0, 0.776);
-  border-radius: 20px;
-} */
 
 .step-img-box {
   position: relative;
@@ -265,17 +243,16 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: inherit;
-  z-index: 1; /* Ensure the pseudo-element is above the image */
+  z-index: 1;
 }
 
 /**************************/
-/*  SECTION */
+/*  BOOK SECTION */
 /**************************/
 
 .section-book {
-  /* background-color: #060606d1; */
-  background-color: rgba(255, 255, 255, 0.934);
   color: #000;
+  background-color: rgba(255, 255, 255, 0.934);
 }
 
 .booking-description {
@@ -294,15 +271,13 @@
 }
 
 .booking-description p {
-  width: 30%;
   font-size: 1.2rem;
+  width: 30%;
 }
 
 /**************************/
-/* HERO SECTION */
+/* STEPS SECTION */
 /**************************/
-
-/* steps */
 
 .section-book {
   background-color: rgb(238, 237, 237);
@@ -326,7 +301,7 @@
   border-radius: 50%;
   background-color: #c92a2a;
   color: #fff;
-  margin: auto; /* Add this line to center the .steps-number */
+  margin: auto;
 }
 
 .steps-title {
@@ -349,7 +324,6 @@
 .steps-btn:visited {
   display: flex;
   justify-content: center;
-  border-radius: 50%;
   background-color: #c92a2a;
   color: #fff;
   margin: auto;
@@ -365,18 +339,8 @@
 }
 
 /**************************/
-/* HERO SECTION */
+/* START SECTION */
 /**************************/
-/* 
-.section-start {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0 12.8rem;
-}
-
-.start-title,
-.start-description {
-} */
 
 .section-start {
   padding: 6.4rem 14rem;
@@ -397,24 +361,24 @@
 
 .start-content {
   display: flex;
-  flex-direction: column;
   font-size: 1.8rem;
-  line-height: 1;
   font-weight: 700;
+  flex-direction: column;
+  line-height: 1;
   border-left: 3px solid #c92a2a;
   padding-left: 1rem;
 }
 
 .start-description {
-  margin-bottom: 5px; /* Adjust margin as needed */
   color: #c92a2a;
+  margin-bottom: 5px;
 }
 
 .start-btn:link,
 .start-btn:visited {
-  padding: 1.2rem 2.4rem; /* Adjust padding as needed */
-  background-color: #c92a2a; /* Set your desired button color */
-  color: #fff; /* Set your desired button text color */
+  color: #fff;
+  background-color: #c92a2a;
+  padding: 1.2rem 2.4rem;
   text-decoration: none;
   border-radius: 1rem;
   cursor: pointer;
@@ -425,10 +389,9 @@
   background-color: #c02626;
 }
 /**************************/
-/* HERO SECTION */
+/* REVIEW SECTION */
 /**************************/
 
-/* review */
 .review-content {
   /* padding: 2rem 8rem; */
 }
@@ -451,13 +414,11 @@
   cursor: pointer;
 }
 
-/* flex-wrap: no-wrap */
-
 .review-content {
 }
 
 /**************************/
-/* HERO SECTION */
+/* CONTACT SECTION */
 /**************************/
 
 .section-contact {
@@ -469,8 +430,8 @@
 }
 
 .contact-content h3 {
-  font-size: 1.4rem;
   color: #c92a2a;
+  font-size: 1.4rem;
 }
 
 .contact-title {
@@ -486,18 +447,18 @@
 
 .contact-phone,
 .contact-email {
+  display: flex;
   padding-right: 2rem;
   padding-top: 1rem;
-  display: flex;
 }
 
 /**************************/
-/* HERO SECTION */
+/* FAQ SECTION */
 /**************************/
 
 .section-faq {
-  background-color: rgb(238, 237, 237);
   color: #000;
+  background-color: rgb(238, 237, 237);
   text-align: center;
 }
 
@@ -512,8 +473,8 @@
 }
 
 .faq-content h3 {
-  font-size: 1.4rem;
   color: #c02626;
+  font-size: 1.4rem;
 }
 
 .faq-content p {
@@ -528,9 +489,9 @@
 }
 
 .faq-questions {
-  position: relative;
   display: flex;
   justify-content: space-between;
+  position: relative;
   padding: 0.6rem;
   cursor: pointer;
 }
@@ -542,8 +503,8 @@
 
 .faq-line:not(:last-child) {
   position: relative;
-  box-sizing: border-box; /* Include padding in the total width and height */
-  padding: 1rem 0; /* Adjust the padding value as needed, 0 for left and right */
+  box-sizing: border-box;
+  padding: 1rem 0;
 }
 
 .faq-line:not(:last-child)::after {
@@ -554,11 +515,11 @@
   transform: translateY(-50%);
   width: 100%;
   height: 2px;
-  background-color: rgba(0, 0, 0, 0.4); /* Set your desired line color */
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /**************************/
-/* HERO SECTION */
+/* FEATURED SECTION */
 /**************************/
 
 .section-featured {
@@ -566,8 +527,8 @@
 }
 
 .featured-container {
-  padding: 8rem 0;
   background-color: rgb(238, 237, 237);
+  padding: 8rem 0;
 }
 
 .featured-img::after {
@@ -577,12 +538,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /* Adjust the alpha value to control the darkness of the tint */
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .featured-img {
@@ -590,9 +546,9 @@
 }
 
 .featured-img img {
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
 }
 
 .featured-text-box {
@@ -621,18 +577,18 @@
 
 .featured-list-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   padding: 4rem 0;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
   list-style: none;
 }
 
 .featured-list-container img {
-  height: 3rem; /* Maintain the aspect ratio */
   display: block;
-  opacity: 50%;
+  height: 3rem;
   margin: 1rem;
+  opacity: 50%;
 }
 
 .featured-text-box span {
@@ -640,11 +596,11 @@
 }
 
 /**************************/
-/* HERO SECTION */
+/* SUBSCRIBE SECTION */
 /**************************/
 .section-subscribe {
-  background-color: rgb(238, 237, 237);
   color: #000;
+  background-color: rgb(238, 237, 237);
 }
 
 .subscribe-container {
@@ -674,22 +630,22 @@
 }
 
 .half-width {
-  width: 48%; /* Adjust as needed */
+  font-size: 1.2rem;
+  color: #555;
+  width: 48%;
   height: 50px;
   border: none;
   outline: none;
-  font-size: 1.2rem;
-  color: #555;
   margin-bottom: 1rem;
 }
 
 .full-width {
+  font-size: 1.2rem;
+  color: #555;
   width: 100%;
   height: 50px;
   border: none;
   outline: none;
-  font-size: 1.2rem;
-  color: #555;
   margin-bottom: 1rem;
 }
 
@@ -701,32 +657,32 @@
 }
 
 .terms-checkbox input[type="checkbox"] {
-  margin-right: 10px; /* Adjust as needed */
+  margin-right: 10px;
 }
 
 .subscribe-btn-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
   background-color: #000;
   height: 50px;
   cursor: pointer;
-  color: #fff;
 }
 
 .subscribe-btn-container:hover {
-  background-color: #fff;
   color: #000;
+  background-color: #fff;
 }
 
 .subscribe-btn-container a {
-  text-align: center;
-  padding: 20px; /* Adjust as needed */
   display: block;
+  text-align: center;
+  padding: 20px;
 }
 
 /**************************/
-/* FOOTER */
+/* FOOTER SECTION*/
 /**************************/
 
 .footer {
@@ -748,8 +704,8 @@
 }
 
 .social-links {
-  list-style: none;
   display: flex;
+  list-style: none;
   gap: 2.4rem;
 }
 
@@ -759,8 +715,8 @@
 }
 
 .copyright {
-  font-size: 1.2rem;
   color: #555;
+  font-size: 1.2rem;
   margin-top: auto;
 }
 
@@ -771,7 +727,6 @@
 }
 
 .contacts {
-  font-style: normal;
   font-size: 1.4rem;
   line-height: 1.6;
 }
@@ -781,17 +736,17 @@
 }
 
 .footer-nav {
-  list-style: none;
   display: flex;
   flex-direction: column;
+  list-style: none;
   gap: 1.8rem;
 }
 
 .footer-link:link,
 .footer-link:visited {
-  text-decoration: none;
   font-size: 1.2rem;
   color: #555;
+  text-decoration: none;
   transition: all 0.3s;
 }
 
