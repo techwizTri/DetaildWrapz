@@ -98,8 +98,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 50rem;
+  min-height: 40rem;
+  max-height: 40rem;
   width: 100%;
-  padding: 2rem;
+  padding: 4rem 2rem;
   z-index: 4;
 }
 
@@ -121,8 +123,12 @@
 }
 
 .hero-btn-container {
+  position: absolute;
+  left: 50%;
+  bottom: 80px;
   padding: 1rem;
   margin-bottom: 1rem;
+  transform: translateX(-50%);
 }
 
 .hero-btn {
@@ -145,7 +151,12 @@
 }
 
 .slider-container {
-  /* padding: 0.2rem; */
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  display: flex;
 }
 
 .slider-ctl {
@@ -153,8 +164,8 @@
   justify-content: center;
   align-items: center;
   list-style-type: none;
-  vertical-align: bottom;
 }
+
 .slider-ctl li {
   height: 20px;
   width: 50px;
@@ -197,6 +208,47 @@
   background-color: #c92a2a;
   opacity: 1;
 }
+
+/* Style for both buttons */
+/* .hero-btn,
+.slider-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #e63434be;
+  border-radius: 99999px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover,
+.slider-btn:hover {
+  background-color: #c92a2ace;
+}
+
+.slider-ctl {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.slider-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-btn.active {
+  background-color: #e63434be;
+} */
 
 /**************************/
 /* SERVICE SECTION */
