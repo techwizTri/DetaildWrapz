@@ -1,23 +1,5 @@
-// const handleSliderBtn = function (clickedBtn) {
-//   const sliderBtn = document.querySelectorAll(".slider-btn");
+"use script";
 
-//   sliderBtn.forEach((btn) => {
-//     if (btn === clickedBtn) {
-//       clickedBtn.classList.add("active");
-//     } else {
-//       btn.classList.remove("active");
-//     }
-//   });
-// };
-
-// const sliderBtn = document.querySelectorAll(".slider-btn");
-// sliderBtn.forEach((btn) => {
-//   btn.addEventListener("click", function () {
-//     handleSliderBtn(this);
-//   });
-// });
-
-// JavaScript
 const slides = [
   {
     title: "ADVANCED PAINT CORRECTION AND PROTECTIVE COATING",
@@ -56,9 +38,11 @@ const sliderBtn = document.querySelectorAll(".slider-btn");
 const heroContent = document.querySelector(".hero-container");
 
 let currentIndexSlide = 0;
+let timer;
 
 sliderBtn.forEach((btn, index) => {
   btn.addEventListener("click", function () {
+    resetTimer();
     currentIndexSlide = index;
     updateSlide();
     updateSlideBtn();
@@ -86,11 +70,15 @@ function nextSlide() {
   updateSlideBtn();
 }
 
-// Initial content update
+function startTimer() {
+  timer = setInterval(nextSlide, 5000);
+}
+
+function resetTimer() {
+  clearInterval(timer);
+  startTimer();
+}
+
 updateSlide();
 
-// Automatic sliding every 5 seconds
-setInterval(nextSlide, 5000);
-
-// next
-// reset timer when sliderBtn is clicked
+startTimer();
