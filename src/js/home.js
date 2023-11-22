@@ -18,33 +18,30 @@
 // });
 
 // JavaScript
-const images = [
-  "src/img/exotics/img1.jpg",
-  "src/img/exotics/img2.jpg",
-  "src/img/exotics/img3.jpg",
-  "src/img/exotics/img4.jpg",
-  "src/img/exotics/img5.jpg",
+const slides = [
+  {
+    title: "ADVANCED PAINT CORRECTION AND PROTECTIVE COATING",
+    description:
+      "We are the leading destination in Las Vegas for XPEL paint protection film, XPEL Prime XR Plus, and 3M Crystalline premium window tint. Additionally, we are certified in Ceramic Pro and Gyeon Quartz ceramic coatings, offering a comprehensive range of premium automotive services.",
+  },
+  {
+    title: "PREMIUM COLOR-CHANGE VINYL WRAPPING",
+    description:
+      "We are meticulous with our complete color-change programs to restyle your high-performance and luxury vehicles, where perfection is the only option.",
+  },
+  {
+    title: "CERTIFIED CERAMIC COATING EXPERTS",
+    description:
+      "We back our ceramic coatings with Ceramic Pro and Gyeon Quartz certifications and warranties to ensure that you are getting the true value of your service with us.",
+  },
+  {
+    title: "COMPLETE CONCOURS DETAILING SERVICES",
+    description:
+      "We treat vehicles as if they were our own, taking measures of care to the next level, going above and beyond to provide you precisely what you expect and more.",
+  },
+  {
+    title: "FULLY CUSTOMIZABLE PROTECTION PACKAGES",
+    description:
+      "We tailor every service and experience to what you are looking for, giving you full customizable ability to select the right protection options that fulfills your purpose.",
+  },
 ];
-
-const heroImg = document.querySelector(".hero-img");
-const sliderBtns = document.querySelectorAll(".slider-btn");
-
-let currentImageIndex = 0;
-
-sliderBtns.forEach((btn, index) => {
-  btn.addEventListener("click", function () {
-    currentImageIndex = index;
-    updateHeroImage();
-    updateSliderButtons();
-  });
-});
-
-function updateHeroImage() {
-  heroImg.src = images[currentImageIndex];
-}
-
-function updateSliderButtons() {
-  sliderBtns.forEach((btn, index) => {
-    btn.classList.toggle("active", index === currentImageIndex);
-  });
-}
