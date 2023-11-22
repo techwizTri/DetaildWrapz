@@ -26,27 +26,27 @@ const slides = [
     imageSrc: "src/img/exotics/img1.jpg",
   },
   {
-    title: "PREMIUM COLOR-CHANGE VINYL WRAPPING",
+    title: "HIGH-QUALITY CUSTOM COLOR TRANSFORMATION WITH VINYL WRAPPING",
     description:
-      "We are meticulous with our complete color-change programs to restyle your high-performance and luxury vehicles, where perfection is the only option.",
+      "We take great care in our comprehensive color-change programs to redefine the aesthetic of your high-performance and luxury vehicles, where achieving perfection is our singular objective.",
     imageSrc: "src/img/exotics/img2.jpg",
   },
   {
     title: "CERTIFIED CERAMIC COATING EXPERTS",
     description:
-      "We back our ceramic coatings with Ceramic Pro and Gyeon Quartz certifications and warranties to ensure that you are getting the true value of your service with us.",
+      "We support our ceramic coatings with certifications and warranties from Ceramic Pro and Gyeon Quartz, guaranteeing the genuine value of our services for you.",
     imageSrc: "src/img/exotics/img3.jpg",
   },
   {
-    title: "COMPLETE CONCOURS DETAILING SERVICES",
+    title: "COMPREHENSIVE CONCOURS DETAILING SOLUTIONS",
     description:
-      "We treat vehicles as if they were our own, taking measures of care to the next level, going above and beyond to provide you precisely what you expect and more.",
+      "We approach vehicles with the same care as if they were our own, elevating our level of attention to go beyond your expectations and deliver more than anticipated.",
     imageSrc: "src/img/exotics/img4.jpg",
   },
   {
     title: "FULLY CUSTOMIZABLE PROTECTION PACKAGES",
     description:
-      "We tailor every service and experience to what you are looking for, giving you full customizable ability to select the right protection options that fulfills your purpose.",
+      "We customize each service to match your preferences, providing you with the flexibility to choose the protection options that best suit your needs.",
     imageSrc: "src/img/exotics/img5.jpg",
   },
 ];
@@ -91,3 +91,6 @@ updateSlide();
 
 // Automatic sliding every 5 seconds
 setInterval(nextSlide, 5000);
+
+// next
+// reset timer when sliderBtn is clicked
