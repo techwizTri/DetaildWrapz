@@ -45,3 +45,8 @@ const slides = [
       "We tailor every service and experience to what you are looking for, giving you full customizable ability to select the right protection options that fulfills your purpose.",
   },
 ];
+
+const sliderContent = document.querySelector(".hero-text-box");
+const sliderBtn = document.querySelectorAll(".slider-btn");
+
+let currentSlide = 0;
