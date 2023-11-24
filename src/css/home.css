@@ -145,24 +145,6 @@
   transition: all 0.15s ease-in-out;
 }
 
-/* TEST */
-.hero-img {
-  transition: transform 0.5s ease-in-out;
-}
-
-.slide-enter {
-  transform: translateX(-100%);
-}
-
-.slide-exit {
-  transform: translateX(100%);
-}
-
-.hero-container {
-  overflow: hidden;
-}
-/* TEST */
-
 .hero-btn:hover,
 .hero-btn:active {
   background-color: #c92a2a9c;
