@@ -44,7 +44,9 @@ sliderBtn.forEach((btn, index) => {
   btn.addEventListener("click", function () {
     resetTimer();
     currentIndexSlide = index;
+    fadeOutCurrentSlide(); // Add a fade-out effect
     updateSlide();
+    fadeInCurrentSlide(); // Add a fade-in effect
     updateSlideBtn();
   });
 });
@@ -56,6 +58,8 @@ function updateSlide() {
   sliderContent.querySelector(".hero-description").textContent =
     currentSlide.description;
   heroContent.querySelector(".hero-img").src = currentSlide.imageSrc;
+  fadeInCurrentSlide();
+  fadeOutCurrentSlide();
 }
 
 function updateSlideBtn() {
@@ -68,6 +72,18 @@ function nextSlide() {
   currentIndexSlide = (currentIndexSlide + 1) % slides.length;
   updateSlide();
   updateSlideBtn();
+}
+
+function fadeOutCurrentSlide() {
+  sliderContent.style.opacity = 0;
+  heroContent.querySelector(".hero-img").style.opacity = 1;
+}
+
+function fadeInCurrentSlide() {
+  setTimeout(() => {
+    sliderContent.style.opacity = 1;
+    heroContent.querySelector(".hero-img").style.opacity = 0.2;
+  }, 350);
 }
 
 function startTimer() {
