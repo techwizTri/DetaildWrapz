@@ -33,9 +33,62 @@ const slides = [
   },
 ];
 
+// const sliderContent = document.querySelector(".hero-text-box");
+// const sliderBtn = document.querySelectorAll(".slider-btn");
+// const heroContent = document.querySelector(".hero-container");
+
+// let currentIndexSlide = 0;
+// let timer;
+
+// sliderBtn.forEach((btn, index) => {
+//   btn.addEventListener("click", function () {
+//     resetTimer();
+//     currentIndexSlide = index;
+//     updateSlide();
+//     updateSlideBtn();
+//   });
+// });
+
+// function updateSlide() {
+//   const currentSlide = slides[currentIndexSlide];
+//   sliderContent.querySelector(".heading-primary").textContent =
+//     currentSlide.title;
+//   sliderContent.querySelector(".hero-description").textContent =
+//     currentSlide.description;
+//   heroContent.querySelector(".hero-img").src = currentSlide.imageSrc;
+// }
+
+// function updateSlideBtn() {
+//   sliderBtn.forEach((btn, index) => {
+//     btn.classList.toggle("active", index === currentIndexSlide);
+//   });
+// }
+
+// function nextSlide() {
+//   currentIndexSlide = (currentIndexSlide + 1) % slides.length;
+//   updateSlide();
+//   updateSlideBtn();
+// }
+
+// function startTimer() {
+//   timer = setInterval(nextSlide, 5000);
+// }
+
+// function resetTimer() {
+//   clearInterval(timer);
+//   startTimer();
+// }
+
+// updateSlide();
+
+// startTimer();
+
+//////////// Test
+
 const sliderContent = document.querySelector(".hero-text-box");
 const sliderBtn = document.querySelectorAll(".slider-btn");
 const heroContent = document.querySelector(".hero-container");
+const heroImg = document.querySelector(".hero-img");
 
 let currentIndexSlide = 0;
 let timer;
@@ -44,22 +97,34 @@ sliderBtn.forEach((btn, index) => {
   btn.addEventListener("click", function () {
     resetTimer();
     currentIndexSlide = index;
-    fadeOutCurrentSlide(); // Add a fade-out effect
     updateSlide();
-    fadeInCurrentSlide(); // Add a fade-in effect
     updateSlideBtn();
   });
 });
 
 function updateSlide() {
   const currentSlide = slides[currentIndexSlide];
-  sliderContent.querySelector(".heading-primary").textContent =
-    currentSlide.title;
-  sliderContent.querySelector(".hero-description").textContent =
-    currentSlide.description;
-  heroContent.querySelector(".hero-img").src = currentSlide.imageSrc;
-  fadeInCurrentSlide();
-  fadeOutCurrentSlide();
+
+  // Add the appropriate class for sliding animation
+  heroImg.classList.add("slide-exit");
+
+  // Use a timeout to update the content and then slide in the new image
+  setTimeout(() => {
+    sliderContent.querySelector(".heading-primary").textContent =
+      currentSlide.title;
+    sliderContent.querySelector(".hero-description").textContent =
+      currentSlide.description;
+    heroContent.querySelector(".hero-img").src = currentSlide.imageSrc;
+
+    // Remove the slide-exit class and add the slide-enter class to slide in the new image
+    heroImg.classList.remove("slide-exit");
+    heroImg.classList.add("slide-enter");
+
+    // Use another timeout to remove the slide-enter class after the sliding animation completes
+    setTimeout(() => {
+      heroImg.classList.remove("slide-enter");
+    }, 500); // You can adjust this value based on your transition duration
+  }, 500); // You can adjust this value based on your transition duration
 }
 
 function updateSlideBtn() {
@@ -72,18 +137,6 @@ function nextSlide() {
   currentIndexSlide = (currentIndexSlide + 1) % slides.length;
   updateSlide();
   updateSlideBtn();
-}
-
-function fadeOutCurrentSlide() {
-  sliderContent.style.opacity = 0;
-  heroContent.querySelector(".hero-img").style.opacity = 1;
-}
-
-function fadeInCurrentSlide() {
-  setTimeout(() => {
-    sliderContent.style.opacity = 1;
-    heroContent.querySelector(".hero-img").style.opacity = 0.2;
-  }, 350);
 }
 
 function startTimer() {

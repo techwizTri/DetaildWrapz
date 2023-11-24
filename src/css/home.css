@@ -106,11 +106,6 @@
   z-index: 4;
 }
 
-.hero-text-box,
-.hero-img {
-  transition: opacity 1s ease-in-out; /* Add a smooth fade transition */
-}
-
 .heading-primary {
   font-size: 4rem;
   font-weight: 700;
@@ -149,6 +144,24 @@
   padding: 1rem;
   transition: all 0.15s ease-in-out;
 }
+
+/* TEST */
+.hero-img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-enter {
+  transform: translateX(-100%);
+}
+
+.slide-exit {
+  transform: translateX(100%);
+}
+
+.hero-container {
+  overflow: hidden;
+}
+/* TEST */
 
 .hero-btn:hover,
 .hero-btn:active {
