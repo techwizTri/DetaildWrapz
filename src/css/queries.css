@@ -1,0 +1,27 @@
+/**************************/
+/*  featured section images */
+/**************************/
+
+/* Adjust the image size and padding for smaller screens */
+@media (max-width: 768px) {
+  .step-img {
+    /* width: 100%; Make the image take the full width of its container */
+    /* border-radius: 0; Remove border radius if needed */
+  }
+
+  .step-img-box {
+    /* padding: 0; Remove padding if needed */
+  }
+}
+
+/* Example media query for larger screens */
+@media (min-width: 769px) {
+  .step-img {
+    /* width: auto; Reset image width to its original size */
+    /* border-radius: 20px; Restore border radius */
+  }
+
+  .step-img-box {
+    /* padding: 2rem; Restore padding if needed */
+  }
+}
