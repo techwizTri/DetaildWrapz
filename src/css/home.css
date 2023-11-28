@@ -210,6 +210,14 @@
 }
 
 /* TEST */
+.hero-container {
+  opacity: 1;
+  transition: opacity 0.5s ease; /* Adjust the transition duration and easing as needed */
+}
+
+.fade-out {
+  opacity: 0 !important; /* Use !important to ensure it overrides other styles */
+}
 
 /* TEST */
 
