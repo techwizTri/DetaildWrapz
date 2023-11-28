@@ -140,7 +140,6 @@ function updateSlide() {
     currentSlide.description;
   heroContent.querySelector(".hero-img").src = currentSlide.imageSrc;
 
-  // Add fade-out class to hero-container
   heroContent.classList.add("fade-out");
 
   // Wait for the transition to complete, then remove the fade-out class
