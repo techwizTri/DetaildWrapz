@@ -82,6 +82,8 @@
 // updateSlide();
 
 // startTimer();
+
+///////////////////////////////////////////////////////
 const slides = [
   {
     title: "ADVANCED PAINT CORRECTION AND PROTECTIVE COATING",
@@ -115,6 +117,67 @@ const slides = [
   },
 ];
 
+// const sliderContent = document.querySelector(".hero-text-box");
+// const sliderBtn = document.querySelectorAll(".slider-btn");
+// const heroContent = document.querySelector(".hero-container");
+// const slidesContainer = document.querySelector(".slides");
+
+// let currentIndexSlide = 0;
+// let timer;
+
+// sliderBtn.forEach((btn, index) => {
+//   btn.addEventListener("click", function () {
+//     resetTimer();
+//     currentIndexSlide = index;
+//     updateSlide();
+//     updateSlideBtn();
+//   });
+// });
+
+// function updateSlide() {
+//   const currentSlide = slides[currentIndexSlide];
+//   sliderContent.querySelector(".heading-primary").textContent =
+//     currentSlide.title;
+//   sliderContent.querySelector(".hero-description").textContent =
+//     currentSlide.description;
+//   heroContent.querySelector(".hero-img").src = currentSlide.imageSrc;
+
+//   heroContent.classList.add("fade-out");
+
+//   // Wait for the transition to complete, then remove the fade-out class
+//   setTimeout(() => {
+//     heroContent.classList.remove("fade-out");
+//   }, 300);
+
+//   // Set the margin-left property for the slides container
+//   slidesContainer.style.marginLeft = `-${currentIndexSlide * 20}%`;
+// }
+
+// function updateSlideBtn() {
+//   sliderBtn.forEach((btn, index) => {
+//     btn.classList.toggle("active", index === currentIndexSlide);
+//   });
+// }
+
+// function nextSlide() {
+//   currentIndexSlide = (currentIndexSlide + 1) % slides.length;
+//   updateSlide();
+//   updateSlideBtn();
+// }
+
+// function startTimer() {
+//   timer = setInterval(nextSlide, 5000);
+// }
+
+// function resetTimer() {
+//   clearInterval(timer);
+//   startTimer();
+// }
+
+// updateSlide();
+
+// startTimer();
+
 const sliderContent = document.querySelector(".hero-text-box");
 const sliderBtn = document.querySelectorAll(".slider-btn");
 const heroContent = document.querySelector(".hero-container");
@@ -134,21 +197,33 @@ sliderBtn.forEach((btn, index) => {
 
 function updateSlide() {
   const currentSlide = slides[currentIndexSlide];
-  sliderContent.querySelector(".heading-primary").textContent =
-    currentSlide.title;
-  sliderContent.querySelector(".hero-description").textContent =
-    currentSlide.description;
-  heroContent.querySelector(".hero-img").src = currentSlide.imageSrc;
-
   heroContent.classList.add("fade-out");
 
-  // Wait for the transition to complete, then remove the fade-out class
+  // Wait for the fade-out transition to start
   setTimeout(() => {
-    heroContent.classList.remove("fade-out");
-  }, 500);
+    sliderContent.querySelector(".heading-primary").textContent =
+      currentSlide.title;
+    sliderContent.querySelector(".hero-description").textContent =
+      currentSlide.description;
 
-  // Set the margin-left property for the slides container
-  slidesContainer.style.marginLeft = `-${currentIndexSlide * 20}%`;
+    // Create a new image element
+    const newImage = new Image();
+    newImage.onload = function () {
+      // Replace the existing image with the new one after it has loaded
+      heroContent.querySelector(".hero-img").src = currentSlide.imageSrc;
+
+      // Remove the fade-out class after a short delay
+      setTimeout(() => {
+        heroContent.classList.remove("fade-out");
+      }, 300);
+
+      // Set the margin-left property for the slides container
+      slidesContainer.style.marginLeft = `-${currentIndexSlide * 20}%`;
+    };
+
+    // Set the src attribute to trigger the image load
+    newImage.src = currentSlide.imageSrc;
+  }, 150);
 }
 
 function updateSlideBtn() {
