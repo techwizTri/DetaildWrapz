@@ -210,21 +210,8 @@
 }
 
 /* TEST */
-/* .hero-container {
-  transition: opacity 0.6s ease-in-out;
-}
-
-.fade-out {
-  opacity: -1 !important;
-} */
-
 .hero-container {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.6
-  ); /* Adjust the alpha (last parameter) as needed */
+  background-color: rgba(0, 0, 0, 0.6);
   opacity: 1;
   transition: opacity 0.2s ease;
 }
