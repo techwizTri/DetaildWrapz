@@ -4,32 +4,35 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentSlide = 1;
   const totalSlides = 5;
 
+  const labels = document.querySelectorAll("#bullets label");
+
   // Function to check the next slide
   function autoSlide() {
     currentSlide = (currentSlide % totalSlides) + 1;
     document.getElementById(`slide${currentSlide}`).checked = true;
+    checkActive();
   }
 
-  // Set interval to check the next slide every 5000 milliseconds (5 seconds)
-  let timer = setInterval(autoSlide, 3000);
+  function checkActive() {
+    labels.forEach(function (label, index) {
+      if (!document.getElementById(`slide${index + 1}`).checked) {
+        label.classList.remove("active");
+      } else {
+        label.classList.add("active");
+      }
+    });
+  }
 
-  const labels = document.querySelectorAll("#bullets label");
+  let timer = setInterval(autoSlide, 5000);
 
-  labels.forEach(function (label) {
+  labels.forEach(function (label, index) {
     label.addEventListener("click", function () {
-      console.log("xlixk");
+      console.log("click");
+      clearInterval(timer);
+      currentSlide = index + 1;
+      document.getElementById(`slide${currentSlide}`).checked = true;
+      timer = setInterval(autoSlide, 5000);
+      checkActive();
     });
   });
 });
-
-//   const labels = document.querySelectorAll("#controls label");
-
-//   labels.forEach(function (label, index) {
-//     label.addEventListener("click", function () {
-//       clearInterval(intervalId);
-//       currentSlide = (index + 2) % totalSlides || totalSlides;
-//       document.getElementById(`slide${currentSlide}`).checked = true;
-//       startInterval();
-//     });
-//   });
-// });
