@@ -392,7 +392,7 @@ input[name="r"] {
 #slides .slide {
   width: 20%;
   float: left;
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -430,11 +430,16 @@ input[name="r"] {
 }
 
 .slide-content {
-  max-width: 50%;
-  max-height: 96%;
-  height: 100%;
+  max-width: 50rem;
+  min-height: 40rem;
+  max-height: 40rem;
+  width: 100%;
   padding: 4rem 2rem;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2rem;
 }
 
 .slide-content h2 {
@@ -443,14 +448,12 @@ input[name="r"] {
   color: #fff;
   line-height: 0.9;
   text-align: center;
-  padding: 1rem;
   text-transform: uppercase;
   font-weight: 700;
 }
 
 .slide-content p {
-  padding: 2rem 4rem;
-  margin-bottom: 4rem;
+  padding: 0 4rem;
   line-height: 1;
   font-size: 1.6rem;
 }
@@ -462,6 +465,35 @@ input[name="r"] {
   transform: translatex(-50%);
   display: flex;
   z-index: 6;
+}
+
+.hero-btn-container {
+  height: 20rem;
+  padding: 1rem 18rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-btn {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #000;
+  border: 2px solid #c92a2ad2;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 2rem;
+  transition: all 0.15s ease-in-out;
+
+  /* Push the button to the bottom */
+  margin-top: auto;
+}
+
+.hero-btn:hover,
+.hero-btn:active {
+  background-color: #c92a2a9c;
 }
 
 #controls {
@@ -486,7 +518,6 @@ input[name="r"] {
 #slide3:checked ~ #controls label:nth-child(4),
 #slide4:checked ~ #controls label:nth-child(5),
 #slide5:checked ~ #controls label:nth-child(1) {
-  background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
   float: right;
   margin: 0 -50px 0 0;
   display: block;
@@ -496,20 +527,17 @@ input[name="r"] {
 #slide3:checked ~ #controls label:nth-last-child(4),
 #slide4:checked ~ #controls label:nth-last-child(5),
 #slide5:checked ~ #controls label:nth-last-child(1) {
-  background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
   float: left;
   margin: 0 0 0 -50px;
   display: block;
 }
 #bullets {
-  padding: 1rem;
   text-align: center;
 }
 #bullets label {
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
+  width: 40px;
+  height: 3px;
   background: #ccc;
   margin: 0 10px;
   z-index: 6;
