@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const labels = document.querySelectorAll("#bullets label");
 
-  // Function to check the next slide
   function autoSlide() {
     currentSlide = (currentSlide % totalSlides) + 1;
     document.getElementById(`slide${currentSlide}`).checked = true;
