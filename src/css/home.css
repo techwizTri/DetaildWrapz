@@ -424,7 +424,13 @@ input[name="r"] {
   color: #fff;
 }
 
-#review-slides .slide_1 {
+.test h1,
+h3,
+p {
+  padding: 1rem;
+}
+
+/* #review-slides .slide_1 {
   background: url("../img/exotics/img1.jpg");
 }
 
@@ -442,7 +448,7 @@ input[name="r"] {
 
 #review-slides .slide_5 {
   background: url("../img/exotics/img5.jpg");
-}
+} */
 
 .review-navigation {
   display: flex;
