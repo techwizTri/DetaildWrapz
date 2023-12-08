@@ -364,7 +364,7 @@ input[name="r"] {
 
 #slidershow {
   width: 100%;
-  text-align: center;
+  text-align: left;
   overflow: hidden;
 }
 
@@ -410,7 +410,7 @@ input[name="r"] {
 #review-slides .innerrev {
   transition: margin-left 800ms cubic-bezier(0.77, 0, 0.175, 1);
   width: 500%;
-  line-height: 0;
+  line-height: 1;
   height: 40rem;
 }
 
@@ -427,7 +427,7 @@ input[name="r"] {
 .test h1,
 h3,
 p {
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 /* #review-slides .slide_1 {
@@ -452,6 +452,7 @@ p {
 
 .review-navigation {
   display: flex;
+  justify-content: center;
 }
 
 .bar {
@@ -473,10 +474,19 @@ input[name="r"] {
 }
 
 .review-slides {
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: flex;
 }
+
+/* Slider Content */
+.slider-content {
+}
+
+.slider-content h1 {
+  font-size: 3.8rem;
+}
+
 /* TEST */
 
 /**************************/
