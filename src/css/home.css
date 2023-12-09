@@ -362,10 +362,18 @@ input[name="r"] {
   margin-left: -40%;
 } */
 
-#slidershow {
-  width: 100%;
+/* #slidershow {
+  width: 60%;
   text-align: left;
   overflow: hidden;
+} */
+
+#slidershow {
+  width: 80%;
+  text-align: left;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #slidershow input[type="radio"] {
@@ -481,10 +489,16 @@ input[name="r"] {
 
 /* Slider Content */
 .slider-content {
+  padding: 4rem;
 }
 
-.slider-content h1 {
-  font-size: 3.8rem;
+.review-tertiary {
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+.review-description {
+  line-height: 1.2;
 }
 
 /* TEST */
