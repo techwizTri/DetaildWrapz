@@ -470,14 +470,14 @@ p {
 .bar {
   width: 20rem;
   height: 0.6rem;
-  border: 2px solid rgba(21, 21, 21, 0.918);
+  border: 1px solid #ffffff97;
   margin: 1rem;
   cursor: pointer;
   transition: 0.4s;
 }
 
 .bar:hover {
-  background-color: #ffffff;
+  background-color: #ffffff97;
 }
 
 input[name="r"] {
