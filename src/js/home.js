@@ -1,5 +1,6 @@
 "use script";
 
+// Slides function
 document.addEventListener("DOMContentLoaded", function () {
   let currentSlide = 1;
   const totalSlides = 5;
@@ -34,4 +35,40 @@ document.addEventListener("DOMContentLoaded", function () {
       checkActive();
     });
   });
+});
+
+// review slides
+// Assuming you have references to the left and right arrow icons
+const leftArrow = document.querySelector(".review-heading-left");
+const rightArrow = document.querySelector(".review-heading-right");
+
+// Assuming you have a reference to the #review-slides .innerrev element
+const innerRev = document.querySelector("#review-slides .innerrev");
+
+// Add click event listener for the left arrow
+leftArrow.addEventListener("click", () => {
+  // Subtract 100% from the current margin-left value
+  const currentMarginLeft = parseFloat(innerRev.style.marginLeft) || 0;
+
+  // Check if it's not already at the leftmost boundary (0%)
+  if (currentMarginLeft < 0) {
+    const newMarginLeft = currentMarginLeft + 100;
+
+    // Set the new margin-left value
+    innerRev.style.marginLeft = `${newMarginLeft}%`;
+  }
+});
+
+// Add click event listener for the right arrow
+rightArrow.addEventListener("click", () => {
+  // Add 100% to the current margin-left value
+  const currentMarginLeft = parseFloat(innerRev.style.marginLeft) || 0;
+
+  // Check if it's not already at the rightmost boundary (-400%)
+  if (currentMarginLeft > -400) {
+    const newMarginLeft = currentMarginLeft - 100;
+
+    // Set the new margin-left value
+    innerRev.style.marginLeft = `${newMarginLeft}%`;
+  }
 });
