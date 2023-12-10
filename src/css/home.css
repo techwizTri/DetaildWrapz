@@ -491,9 +491,25 @@ input[name="r"] {
   display: flex;
 }
 
-.section-review-tertiary {
-  font-size: 3rem;
+.review-heading-content {
+  display: flex;
   padding: 1rem 4rem;
+  align-items: center;
+}
+
+.review-heading-tertiary {
+  font-size: 3rem;
+}
+
+.review-heading-left,
+.review-heading-right {
+  font-size: 4rem;
+  cursor: pointer;
+  margin-left: 4rem;
+}
+
+.review-heading-left {
+  margin-left: auto;
 }
 
 /* Slider Content */
