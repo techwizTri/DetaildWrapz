@@ -59,6 +59,7 @@ leftArrow.addEventListener("click", () => {
   }
 });
 
+// yee
 // Add click event listener for the right arrow
 rightArrow.addEventListener("click", () => {
   // Add 100% to the current margin-left value
