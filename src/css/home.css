@@ -380,14 +380,11 @@
   min-height: 100%;
 }
 
-.slider-content {
+.review-content {
   padding: 0 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-}
-
-.slider-content svg {
 }
 
 .review-tertiary {
