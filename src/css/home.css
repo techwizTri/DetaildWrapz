@@ -64,8 +64,8 @@
 /**************************/
 
 #slider {
-  width: 100%;
   text-align: center;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -74,8 +74,8 @@
 }
 
 #slider label {
-  cursor: pointer;
   text-decoration: none;
+  cursor: pointer;
 }
 
 #slides {
@@ -109,20 +109,20 @@
 }
 
 #slides .inner {
-  transition: margin-left 800ms cubic-bezier(0.77, 0, 0.175, 1);
   width: 500%;
-  line-height: 0;
   height: 40rem;
+  line-height: 0;
+  transition: margin-left 800ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 #slides .slide {
-  width: 20%;
-  float: left;
   display: flex !important;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  float: left;
   color: #fff;
+  width: 20%;
+  height: 100%;
 }
 
 #slides .slide_1 {
@@ -156,64 +156,62 @@
 }
 
 .slide-content {
-  max-width: 50rem;
-  min-height: 40rem;
-  max-height: 40rem;
-  width: 100%;
-  padding: 4rem 2rem;
-  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding: 4rem 2rem;
   gap: 2rem;
+  width: 100%;
+  max-width: 50rem;
+  max-height: 40rem;
+  min-height: 40rem;
+  z-index: 2;
 }
 
 .slide-content h2 {
+  text-align: center;
+  text-transform: uppercase;
   font-size: 4rem;
   font-weight: 700;
   color: #fff;
   line-height: 0.9;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
 }
 
 .slide-content p {
   padding: 0 4rem;
-  line-height: 1;
   font-size: 1.6rem;
+  line-height: 1;
 }
 
 .navigation {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translatex(-50%);
   display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translatex(-50%);
   z-index: 6;
 }
 
 .hero-btn-container {
-  height: 20rem;
-  padding: 1rem 18rem;
   display: flex;
   flex-direction: column;
+  padding: 1rem 18rem;
+  height: 20rem;
 }
 
 .hero-btn {
   display: inline-block;
+  padding: 2rem;
+  border: 2px solid #c92a2ad2;
+  margin-top: auto;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
   color: #fff;
   background-color: #000;
-  border: 2px solid #c92a2ad2;
-  letter-spacing: 1px;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 2rem;
   transition: all 0.15s ease-in-out;
-
-  margin-top: auto;
 }
 
 .hero-btn:hover,
@@ -222,18 +220,18 @@
 }
 
 #controls {
-  margin: -180px 0 0 0;
+  display: none;
+  position: relative;
   width: 100%;
   height: 50px;
-  position: relative;
-  display: none;
+  margin: -180px 0 0 0;
 }
 #controls label {
-  transition: opacity 0.2s ease-out;
   display: none;
   width: 50px;
   height: 50px;
   opacity: 0.4;
+  transition: opacity 0.2s ease-out;
 }
 #controls label:hover {
   opacity: 1;
@@ -243,28 +241,28 @@
 #slide3:checked ~ #controls label:nth-child(4),
 #slide4:checked ~ #controls label:nth-child(5),
 #slide5:checked ~ #controls label:nth-child(1) {
+  display: block;
   float: right;
   margin: 0 -50px 0 0;
-  display: block;
 }
 #slide1:checked ~ #controls label:nth-last-child(2),
 #slide2:checked ~ #controls label:nth-last-child(3),
 #slide3:checked ~ #controls label:nth-last-child(4),
 #slide4:checked ~ #controls label:nth-last-child(5),
 #slide5:checked ~ #controls label:nth-last-child(1) {
+  display: block;
   float: left;
   margin: 0 0 0 -50px;
-  display: block;
 }
 #bullets {
   text-align: center;
 }
 #bullets label {
   display: inline-block;
+  margin: 0 12px;
   width: 3rem;
   height: 0.2rem;
   background: #ffffff97;
-  margin: 0 12px;
   z-index: 6;
 }
 
@@ -496,11 +494,11 @@
 /**************************/
 
 #review-slider {
-  width: 100%;
   text-align: left;
-  overflow: hidden;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 }
 
 #review-slides {
@@ -509,20 +507,20 @@
 }
 
 #review-slides .innerrev {
-  transition: margin-left 800ms cubic-bezier(0.77, 0, 0.175, 1);
   width: 500%;
-  line-height: 1;
   height: 20rem;
+  line-height: 1;
+  transition: margin-left 800ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 #review-slides .slider {
-  width: 20%;
-  float: left;
   display: flex !important;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  float: left;
   color: #fff;
+  width: 20%;
+  height: 100%;
 }
 
 .innerrev {
@@ -530,15 +528,15 @@
 }
 
 .review-slides {
+  display: flex;
   width: 100%;
   height: 100%;
-  display: flex;
 }
 
 .review-heading-content {
   display: flex;
-  padding: 2rem 4rem;
   align-items: center;
+  padding: 2rem 4rem;
 }
 
 .review-heading-tertiary {
@@ -549,8 +547,8 @@
 .review-heading-left,
 .review-heading-right {
   font-size: 4rem;
-  cursor: pointer;
   margin-left: 4rem;
+  cursor: pointer;
 }
 
 .review-heading-left {
@@ -563,10 +561,10 @@
 }
 
 .review-content {
-  padding: 0 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding: 0 4rem;
 }
 
 .review-tertiary {
@@ -574,8 +572,8 @@
 }
 
 .review-description {
-  line-height: 1.2;
   font-size: 1.2rem;
+  line-height: 1.2;
 }
 
 .review-customer {
@@ -585,9 +583,9 @@
 .review-avatar {
   width: 6rem;
   height: 6rem;
-  overflow: hidden;
-  border-radius: 50%;
   margin-right: 10px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .review-avatar img {
