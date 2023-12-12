@@ -544,6 +544,8 @@
   text-decoration: underline;
 }
 
+/* Change review-heading to review-arrow left and add transform property */
+
 .review-heading-left,
 .review-heading-right {
   font-size: 4rem;
