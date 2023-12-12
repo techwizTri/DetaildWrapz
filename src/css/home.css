@@ -400,17 +400,17 @@
 }
 
 .review-avatar {
-  width: 6rem; /* Adjust the size of the circle */
-  height: 6rem; /* Adjust the size of the circle */
+  width: 6rem;
+  height: 6rem;
   overflow: hidden;
   border-radius: 50%;
-  margin-right: 10px; /* Adjust the spacing between the image and text */
+  margin-right: 10px;
 }
 
 .review-avatar img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the circular area */
+  object-fit: cover;
 }
 
 .customer-info {
