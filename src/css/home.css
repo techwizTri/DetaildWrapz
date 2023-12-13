@@ -546,14 +546,14 @@
 
 /* Change review-heading to review-arrow left and add transform property */
 
-.review-heading-left,
-.review-heading-right {
+.review-arrow-left,
+.review-arrow-right {
   font-size: 4rem;
   margin-left: 4rem;
   cursor: pointer;
 }
 
-.review-heading-left {
+.review-arrow-left {
   margin-left: auto;
 }
 
