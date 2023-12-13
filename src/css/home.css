@@ -544,13 +544,17 @@
   text-decoration: underline;
 }
 
-/* Change review-heading to review-arrow left and add transform property */
-
 .review-arrow-left,
 .review-arrow-right {
   font-size: 4rem;
   margin-left: 4rem;
   cursor: pointer;
+  transition: transform 0.6s ease;
+}
+
+.review-arrow-left:hover,
+.review-arrow-right:hover {
+  transform: scale(1.2);
 }
 
 .review-arrow-left {

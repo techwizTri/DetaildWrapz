@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // review slides
 // Assuming you have references to the left and right arrow icons
-const leftArrow = document.querySelector(".review-heading-left");
-const rightArrow = document.querySelector(".review-heading-right");
+const leftArrow = document.querySelector(".review-arrow-left");
+const rightArrow = document.querySelector(".review-arrow-right");
 
 // Assuming you have a reference to the #review-slides .innerrev element
 const innerRev = document.querySelector("#review-slides .innerrev");
