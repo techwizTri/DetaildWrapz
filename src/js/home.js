@@ -56,6 +56,7 @@ leftArrow.addEventListener("click", () => {
 
     // Set the new margin-left value
     innerRev.style.marginLeft = `${newMarginLeft}%`;
+    console.log(`${innerRev.style.marginLeft}`);
   }
 });
 
@@ -64,6 +65,12 @@ leftArrow.addEventListener("click", () => {
 rightArrow.addEventListener("click", () => {
   // Add 100% to the current margin-left value
   const currentMarginLeft = parseFloat(innerRev.style.marginLeft) || 0;
+
+  if (currentMarginLeft <= -300) {
+    rightArrow.style.color = "green";
+  } else {
+    rightArrow.style.color = "fff";
+  }
 
   // Check if it's not already at the rightmost boundary (-400%)
   if (currentMarginLeft > -400) {
