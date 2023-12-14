@@ -37,12 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// review slides
-// Assuming you have references to the left and right arrow icons
 const leftArrow = document.querySelector(".review-arrow-left");
 const rightArrow = document.querySelector(".review-arrow-right");
-
-// Assuming you have a reference to the #review-slides .innerrev element
 const innerRev = document.querySelector("#review-slides .innerrev");
 
 // Add click event listener for the left arrow
@@ -56,19 +52,22 @@ leftArrow.addEventListener("click", () => {
 
     // Set the new margin-left value
     innerRev.style.marginLeft = `${newMarginLeft}%`;
-    console.log(`${innerRev.style.marginLeft}`);
+
+    // Reset the color of the right arrow to white
+    rightArrow.style.color = "white";
   }
 });
 
-// yee
 // Add click event listener for the right arrow
 rightArrow.addEventListener("click", () => {
   // Add 100% to the current margin-left value
   const currentMarginLeft = parseFloat(innerRev.style.marginLeft) || 0;
 
+  // Check if it's at the last slide
   if (currentMarginLeft <= -300) {
     rightArrow.style.color = "green";
-    // rightArrow.style.color = "fff";
+  } else {
+    rightArrow.style.color = "white";
   }
 
   // Check if it's not already at the rightmost boundary (-400%)
