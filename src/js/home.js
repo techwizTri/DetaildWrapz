@@ -67,8 +67,8 @@ rightArrow.addEventListener("click", () => {
   if (currentMarginLeft <= -300) {
     rightArrow.style.color = "rgb(58, 57, 57)";
 
-    rightArrow.style.transition = "transform 0.3s ease"; // Add transition for smooth animation
-    rightArrow.style.transform = "scale(1)";
+    // rightArrow.style.transition = "transform 0.3s ease"; // Add transition for smooth animation
+    // rightArrow.style.transform = "scale(1)";
 
     // rightArrow.addEventListener("mouseover", () => {
     //   rightArrow.style.transform = "scale(1.2)";
@@ -89,6 +89,12 @@ rightArrow.addEventListener("click", () => {
     innerRev.style.marginLeft = `${newMarginLeft}%`;
   }
 });
+
+if (rightArrow.style.color === "rgb(58, 57, 57)") {
+  console.log("true");
+  rightArrow.style.cursor = "alias";
+  rightArrow.style.transform = "scale(1)";
+}
 
 // // Add hover effect using CSS
 // rightArrow.style.transition = "transform 0.3s ease"; // Add transition for smooth animation
