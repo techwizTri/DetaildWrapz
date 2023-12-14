@@ -66,7 +66,17 @@ rightArrow.addEventListener("click", () => {
   // Check if it's at the last slide
   if (currentMarginLeft <= -300) {
     rightArrow.style.color = "rgb(58, 57, 57)";
+
+    rightArrow.style.transition = "transform 0.3s ease"; // Add transition for smooth animation
     rightArrow.style.transform = "scale(1)";
+
+    // rightArrow.addEventListener("mouseover", () => {
+    //   rightArrow.style.transform = "scale(1.2)";
+    // });
+
+    // rightArrow.addEventListener("mouseout", () => {
+    //   rightArrow.style.transform = "scale(1)";
+    // });
   } else {
     rightArrow.style.color = "white";
   }
