@@ -54,8 +54,7 @@ leftArrow.addEventListener("click", () => {
     innerRev.style.marginLeft = `${newMarginLeft}%`;
 
     // Reset the color of the right arrow to white
-    rightArrow.style.color = "white";
-    rightArrow.style.cursor = "pointer";
+    rightArrow.classList.remove("active");
   }
 });
 
@@ -66,24 +65,16 @@ rightArrow.addEventListener("click", () => {
 
   // Check if it's at the last slide
   if (currentMarginLeft <= -300) {
-    rightArrow.style.color = "rgb(58, 57, 57)";
-    console.log(rightArrow.style.color);
-
-    rightArrow.style.cursor = "alias";
-    rightArrow.classList.remove();
-
+    rightArrow.classList.add("active");
     // rightArrow.style.transition = "transform 0.3s ease"; // Add transition for smooth animation
     // rightArrow.style.transform = "scale(1)";
-
     // rightArrow.addEventListener("mouseover", () => {
     //   rightArrow.style.transform = "scale(1.2)";
     // });
-
     // rightArrow.addEventListener("mouseout", () => {
     //   rightArrow.style.transform = "scale(1)";
     // });
   } else {
-    rightArrow.style.color = "white";
   }
 
   // Check if it's not already at the rightmost boundary (-400%)

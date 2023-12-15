@@ -562,6 +562,12 @@
   margin-left: auto;
 }
 
+.review-arrow-right.active {
+  color: rgb(58, 57, 57);
+  transform: scale(1);
+  cursor: alias;
+}
+
 /*  Review slider Content */
 .rev {
   min-height: 100%;
