@@ -41,72 +41,28 @@ const leftArrow = document.querySelector(".review-arrow-left");
 const rightArrow = document.querySelector(".review-arrow-right");
 const innerRev = document.querySelector("#review-slides .innerrev");
 
-// Add click event listener for the left arrow
 leftArrow.addEventListener("click", () => {
-  // Subtract 100% from the current margin-left value
   const currentMarginLeft = parseFloat(innerRev.style.marginLeft) || 0;
 
-  // Check if it's not already at the leftmost boundary (0%)
   if (currentMarginLeft < 0) {
     const newMarginLeft = currentMarginLeft + 100;
 
-    // Set the new margin-left value
     innerRev.style.marginLeft = `${newMarginLeft}%`;
 
-    // Reset the color of the right arrow to white
     rightArrow.classList.remove("active");
   }
 });
 
-// Add click event listener for the right arrow
 rightArrow.addEventListener("click", () => {
-  // Add 100% to the current margin-left value
   const currentMarginLeft = parseFloat(innerRev.style.marginLeft) || 0;
 
-  // Check if it's at the last slide
   if (currentMarginLeft <= -300) {
     rightArrow.classList.add("active");
-    // rightArrow.style.transition = "transform 0.3s ease"; // Add transition for smooth animation
-    // rightArrow.style.transform = "scale(1)";
-    // rightArrow.addEventListener("mouseover", () => {
-    //   rightArrow.style.transform = "scale(1.2)";
-    // });
-    // rightArrow.addEventListener("mouseout", () => {
-    //   rightArrow.style.transform = "scale(1)";
-    // });
-  } else {
   }
 
-  // Check if it's not already at the rightmost boundary (-400%)
   if (currentMarginLeft > -400) {
     const newMarginLeft = currentMarginLeft - 100;
 
-    // Set the new margin-left value
     innerRev.style.marginLeft = `${newMarginLeft}%`;
   }
 });
-
-// if (rightArrow.style.color === "rgb(58, 57, 57)") {
-//   console.log("true");
-//   rightArrow.style.cursor = "alias";
-//   rightArrow.style.transform = "scale(1)";
-// } else {
-//   console.log("false");
-// }
-
-// const computedColor = getComputedStyle(rightArrow).color;
-
-// // Log the computed color of the right arrow
-// console.log(computedColor);
-
-// // Add hover effect using CSS
-// rightArrow.style.transition = "transform 0.3s ease"; // Add transition for smooth animation
-// rightArrow.style.transform = "scale(1)";
-
-// rightArrow.addEventListener("mouseover", () => {
-//   rightArrow.style.transform = "scale(1.2)";
-// });
-
-// rightArrow.addEventListener("mouseout", () => {
-//   rightArrow.style.transform = "scale(1)";
-// });
