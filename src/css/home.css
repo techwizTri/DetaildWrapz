@@ -226,6 +226,7 @@
   height: 50px;
   margin: -180px 0 0 0;
 }
+
 #controls label {
   display: none;
   width: 50px;
@@ -233,9 +234,11 @@
   opacity: 0.4;
   transition: opacity 0.2s ease-out;
 }
+
 #controls label:hover {
   opacity: 1;
 }
+
 #slide1:checked ~ #controls label:nth-child(2),
 #slide2:checked ~ #controls label:nth-child(3),
 #slide3:checked ~ #controls label:nth-child(4),
@@ -245,6 +248,7 @@
   float: right;
   margin: 0 -50px 0 0;
 }
+
 #slide1:checked ~ #controls label:nth-last-child(2),
 #slide2:checked ~ #controls label:nth-last-child(3),
 #slide3:checked ~ #controls label:nth-last-child(4),
@@ -254,9 +258,11 @@
   float: left;
   margin: 0 0 0 -50px;
 }
+
 #bullets {
   text-align: center;
 }
+
 #bullets label {
   display: inline-block;
   margin: 0 12px;
@@ -296,6 +302,7 @@
   #slide4:checked ~ #controls label:nth-last-child(1) {
     margin: 0;
   }
+
   #slides {
     max-width: calc(100% - 140px);
     margin: 0 auto;
