@@ -55,6 +55,7 @@ leftArrow.addEventListener("click", () => {
 
     // Reset the color of the right arrow to white
     rightArrow.style.color = "white";
+    rightArrow.style.cursor = "pointer";
   }
 });
 
@@ -66,6 +67,10 @@ rightArrow.addEventListener("click", () => {
   // Check if it's at the last slide
   if (currentMarginLeft <= -300) {
     rightArrow.style.color = "rgb(58, 57, 57)";
+    console.log(rightArrow.style.color);
+
+    rightArrow.style.cursor = "alias";
+    rightArrow.classList.remove();
 
     // rightArrow.style.transition = "transform 0.3s ease"; // Add transition for smooth animation
     // rightArrow.style.transform = "scale(1)";
@@ -90,11 +95,18 @@ rightArrow.addEventListener("click", () => {
   }
 });
 
-if (rightArrow.style.color === "rgb(58, 57, 57)") {
-  console.log("true");
-  rightArrow.style.cursor = "alias";
-  rightArrow.style.transform = "scale(1)";
-}
+// if (rightArrow.style.color === "rgb(58, 57, 57)") {
+//   console.log("true");
+//   rightArrow.style.cursor = "alias";
+//   rightArrow.style.transform = "scale(1)";
+// } else {
+//   console.log("false");
+// }
+
+// const computedColor = getComputedStyle(rightArrow).color;
+
+// // Log the computed color of the right arrow
+// console.log(computedColor);
 
 // // Add hover effect using CSS
 // rightArrow.style.transition = "transform 0.3s ease"; // Add transition for smooth animation
