@@ -1,6 +1,8 @@
 "use script";
 
-// Slides function
+/**************************/
+/* SLIDER SECTION */
+/**************************/
 document.addEventListener("DOMContentLoaded", function () {
   let currentSlide = 1;
   const totalSlides = 5;
@@ -37,6 +39,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+/**************************/
+/* END SLIDER SECTION */
+/**************************/
+
+/**************************/
+/* REVIEW SECTION */
+/**************************/
+
 const leftArrow = document.querySelector(".review-arrow-left");
 const rightArrow = document.querySelector(".review-arrow-right");
 const innerRev = document.querySelector("#review-slides .innerrev");
@@ -66,3 +76,7 @@ rightArrow.addEventListener("click", () => {
     innerRev.style.marginLeft = `${newMarginLeft}%`;
   }
 });
+
+/**************************/
+/* END REVIEW SECTION */
+/**************************/
