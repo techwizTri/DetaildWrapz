@@ -701,7 +701,7 @@
   padding: 0 1.2rem;
   text-align: left;
   font-size: 1.2rem;
-  transition: max-height 0.4s ease;
+  transition: max-height 0.6s ease-in-out;
 }
 
 .faq-answer.active {
