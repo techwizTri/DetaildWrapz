@@ -684,6 +684,17 @@
   font-size: 1.2rem;
 }
 
+.faq-answer {
+  padding: 1.2rem;
+  text-align: left;
+  font-size: 1.2rem;
+  display: none;
+}
+
+.faq-answer.active {
+  display: flex;
+}
+
 .faq-container {
   background-color: rgba(0, 0, 0, 0.05);
   margin: 4rem 16rem;

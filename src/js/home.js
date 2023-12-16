@@ -85,6 +85,19 @@ rightArrow.addEventListener("click", () => {
 /* FAQ SECTION */
 /**************************/
 
+const faqDown = document.querySelectorAll(".faq-down");
+const faqAnswer = document.querySelector(".faq-answer");
+
+faqAnswer.addEventListener("click", () => {
+  console.log("lick");
+});
+
+faqDown.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    console.log("clicked");
+  });
+});
+
 /**************************/
 /* END FAQ SECTION */
 /**************************/
