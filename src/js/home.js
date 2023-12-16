@@ -1,6 +1,8 @@
 "use script";
 
-// Slides function
+/**************************/
+/* SLIDER SECTION */
+/**************************/
 document.addEventListener("DOMContentLoaded", function () {
   let currentSlide = 1;
   const totalSlides = 5;
@@ -37,38 +39,73 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// review slides
-// Assuming you have references to the left and right arrow icons
-const leftArrow = document.querySelector(".review-heading-left");
-const rightArrow = document.querySelector(".review-heading-right");
+/**************************/
+/* END SLIDER SECTION */
+/**************************/
 
-// Assuming you have a reference to the #review-slides .innerrev element
+/**************************/
+/* REVIEW SECTION */
+/**************************/
+
+const leftArrow = document.querySelector(".review-arrow-left");
+const rightArrow = document.querySelector(".review-arrow-right");
 const innerRev = document.querySelector("#review-slides .innerrev");
 
-// Add click event listener for the left arrow
 leftArrow.addEventListener("click", () => {
-  // Subtract 100% from the current margin-left value
   const currentMarginLeft = parseFloat(innerRev.style.marginLeft) || 0;
 
-  // Check if it's not already at the leftmost boundary (0%)
   if (currentMarginLeft < 0) {
     const newMarginLeft = currentMarginLeft + 100;
 
-    // Set the new margin-left value
     innerRev.style.marginLeft = `${newMarginLeft}%`;
+
+    rightArrow.classList.remove("active");
   }
 });
 
-// Add click event listener for the right arrow
 rightArrow.addEventListener("click", () => {
-  // Add 100% to the current margin-left value
   const currentMarginLeft = parseFloat(innerRev.style.marginLeft) || 0;
 
-  // Check if it's not already at the rightmost boundary (-400%)
+  if (currentMarginLeft <= -300) {
+    rightArrow.classList.add("active");
+  }
+
   if (currentMarginLeft > -400) {
     const newMarginLeft = currentMarginLeft - 100;
 
-    // Set the new margin-left value
     innerRev.style.marginLeft = `${newMarginLeft}%`;
   }
 });
+
+/**************************/
+/* END REVIEW SECTION */
+/**************************/
+
+/**************************/
+/* FAQ SECTION */
+/**************************/
+
+const faqQuestions = document.querySelectorAll(".faq-questions");
+const faqAnswer = document.querySelectorAll(".faq-answer");
+
+faqQuestions.forEach((btn, index) => {
+  btn.addEventListener("click", (event) => {
+    const isAnswerActive = faqAnswer[index].classList.contains("active");
+
+    if (isAnswerActive) {
+      faqAnswer[index].classList.remove("active");
+    } else {
+      faqAnswer.forEach((answer) => {
+        answer.classList.remove("active");
+      });
+
+      faqAnswer[index].classList.add("active");
+    }
+
+    console.log("clicked");
+  });
+});
+
+/**************************/
+/* END FAQ SECTION */
+/**************************/
