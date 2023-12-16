@@ -684,7 +684,7 @@
   font-size: 1.2rem;
 }
 
-.faq-answer {
+/* .faq-answer {
   padding: 1.2rem;
   text-align: left;
   font-size: 1.2rem;
@@ -692,6 +692,20 @@
 }
 
 .faq-answer.active {
+  display: flex;
+} */
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1.2rem;
+  text-align: left;
+  font-size: 1.2rem;
+  transition: max-height 0.4s ease;
+}
+
+.faq-answer.active {
+  max-height: 1000px; /* Adjust this value to be greater than the expected height of your FAQ answer */
   display: flex;
 }
 
