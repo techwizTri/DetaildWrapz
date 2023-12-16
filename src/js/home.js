@@ -92,6 +92,16 @@ faqQuestions.forEach((btn, index) => {
   btn.addEventListener("click", (event) => {
     const isAnswerActive = faqAnswer[index].classList.contains("active");
 
+    if (isAnswerActive) {
+      faqAnswer[index].classList.remove("active");
+    } else {
+      faqAnswer.forEach((answer) => {
+        answer.classList.remove("active");
+      });
+
+      faqAnswer[index].classList.add("active");
+    }
+
     console.log("clicked");
   });
 });
