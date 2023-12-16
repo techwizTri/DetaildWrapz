@@ -86,14 +86,17 @@ rightArrow.addEventListener("click", () => {
 /**************************/
 
 const faqDown = document.querySelectorAll(".faq-down");
-const faqAnswer = document.querySelector(".faq-answer");
+const faqAnswer = document.querySelectorAll(".faq-answer");
 
-faqAnswer.addEventListener("click", () => {
-  console.log("lick");
-});
+// faqAnswer.addEventListener("click", () => {
+//   console.log("lick");
+// });
 
 faqDown.forEach((btn) => {
   btn.addEventListener("click", () => {
+    faqAnswer.forEach((click) => {
+      click.classList.add("active");
+    });
     console.log("clicked");
   });
 });
