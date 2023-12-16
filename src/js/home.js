@@ -76,6 +76,7 @@ rightArrow.addEventListener("click", () => {
     innerRev.style.marginLeft = `${newMarginLeft}%`;
   }
 });
+cece;
 
 /**************************/
 /* END REVIEW SECTION */
