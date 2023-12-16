@@ -651,8 +651,9 @@
 .contact-phone,
 .contact-email {
   display: flex;
-  padding-right: 2rem;
-  padding-top: 1rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  cursor: pointer;
 }
 
 /**************************/
@@ -684,17 +685,6 @@
   font-size: 1.2rem;
 }
 
-/* .faq-answer {
-  padding: 1.2rem;
-  text-align: left;
-  font-size: 1.2rem;
-  display: none;
-}
-
-.faq-answer.active {
-  display: flex;
-} */
-
 .faq-answer {
   max-height: 0;
   overflow: hidden;
@@ -705,7 +695,7 @@
 }
 
 .faq-answer.active {
-  max-height: 1000px; /* Adjust this value to be greater than the expected height of your FAQ answer */
+  max-height: 1000px;
   display: flex;
 }
 
