@@ -85,10 +85,10 @@ rightArrow.addEventListener("click", () => {
 /* FAQ SECTION */
 /**************************/
 
-const faqDown = document.querySelectorAll(".faq-down");
+const faqQuestions = document.querySelectorAll(".faq-questions");
 const faqAnswer = document.querySelectorAll(".faq-answer");
 
-faqDown.forEach((btn, index) => {
+faqQuestions.forEach((btn, index) => {
   btn.addEventListener("click", (event) => {
     // Remove "active" class from all answers
     faqAnswer.forEach((answer) => {
