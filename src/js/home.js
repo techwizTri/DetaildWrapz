@@ -88,15 +88,15 @@ rightArrow.addEventListener("click", () => {
 const faqDown = document.querySelectorAll(".faq-down");
 const faqAnswer = document.querySelectorAll(".faq-answer");
 
-// faqAnswer.addEventListener("click", () => {
-//   console.log("lick");
-// });
-
-faqDown.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    faqAnswer.forEach((click) => {
-      click.classList.add("active");
+faqDown.forEach((btn, index) => {
+  btn.addEventListener("click", (event) => {
+    // Remove "active" class from all answers
+    faqAnswer.forEach((answer) => {
+      answer.classList.remove("active");
     });
+
+    faqAnswer[index].classList.add("active");
+
     console.log("clicked");
   });
 });
