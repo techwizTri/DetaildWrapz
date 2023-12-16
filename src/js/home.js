@@ -90,12 +90,7 @@ const faqAnswer = document.querySelectorAll(".faq-answer");
 
 faqQuestions.forEach((btn, index) => {
   btn.addEventListener("click", (event) => {
-    // Remove "active" class from all answers
-    faqAnswer.forEach((answer) => {
-      answer.classList.remove("active");
-    });
-
-    faqAnswer[index].classList.add("active");
+    const isAnswerActive = faqAnswer[index].classList.contains("active");
 
     console.log("clicked");
   });
