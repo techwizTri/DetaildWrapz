@@ -4,12 +4,11 @@
 
 .section-about {
   background-color: rgba(255, 255, 255, 0.934);
-  display: flex;
+  color: #000;
 }
 
 .about-text-box {
   text-align: center;
-  color: #000;
   padding: 4rem 28rem;
 }
 
