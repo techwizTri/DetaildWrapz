@@ -26,3 +26,9 @@
   display: flex;
   padding: 4rem 8rem;
 }
+
+.about-box-description {
+  background-color: rgb(21, 21, 21);
+  color: #fff;
+  height: 30rem;
+}
