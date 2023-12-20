@@ -9,7 +9,7 @@
 
 .about-content {
   text-align: center;
-  padding: 2rem 18rem;
+  padding: 2rem 4rem;
 }
 
 .about-header {
@@ -26,6 +26,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.about-content.grid--2-cols {
 }
 
 /* .about-box {
