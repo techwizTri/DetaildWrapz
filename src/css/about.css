@@ -56,6 +56,14 @@
 .about-box3 h3 {
   margin-top: 1rem;
 }
+
+.about-box4 {
+  font-size: 1.2rem;
+}
+
+.about-footer {
+}
+
 /* .about-box {
   display: flex;
   padding: 4rem 8rem;
