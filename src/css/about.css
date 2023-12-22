@@ -43,8 +43,14 @@
   line-height: 1.2;
 }
 
-.about-content.grid--2-cols p {
+.about-box2 {
   font-size: 1.4rem;
+}
+
+.about-box3 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 /* .about-box {
