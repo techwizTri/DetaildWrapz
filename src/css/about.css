@@ -39,8 +39,8 @@
 }
 
 .about-box1 {
-  font-size: 2.6rem;
-  line-height: 1.2;
+  font-size: 1.8rem;
+  line-height: 1;
 }
 
 .about-box2 {
@@ -53,6 +53,9 @@
   align-items: center;
 }
 
+.about-box3 h3 {
+  margin-top: 1rem;
+}
 /* .about-box {
   display: flex;
   padding: 4rem 8rem;
