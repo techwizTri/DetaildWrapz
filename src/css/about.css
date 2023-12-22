@@ -38,9 +38,9 @@
   border-bottom: 3px solid #c92a2a;
 }
 
-.about-content.grid--2-cols h2:first-child {
+.about-box1 {
   font-size: 2.6rem;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .about-content.grid--2-cols p {
