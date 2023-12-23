@@ -62,6 +62,23 @@
 }
 
 .about-footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.about-footer h3 {
+  font-size: 4rem;
+}
+
+.about-footer p {
+}
+
+.about-footer1,
+.about-footer2,
+.about-footer3 {
+  width: 40%;
+  margin: 0 2rem;
 }
 
 /* .about-box {
