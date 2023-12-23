@@ -1,2 +1,12 @@
-.tester {
+.test-container {
+  height: 40rem;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.test-container img {
+  width: 100%; /* Fill the entire width of the container */
+  height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
 }
