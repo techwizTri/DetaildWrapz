@@ -18,7 +18,7 @@
 }
 
 .about-description {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding: 2rem;
 }
 
@@ -72,6 +72,7 @@
 }
 
 .about-footer p {
+  font-size: 1.4rem;
 }
 
 .about-footer1,
