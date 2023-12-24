@@ -3,10 +3,41 @@
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
+  z-index: 4;
 }
 
 .test-container img {
   width: 100%; /* Fill the entire width of the container */
   height: auto; /* Let the height adjust automatically to maintain aspect ratio */
   object-fit: cover; /* Maintain aspect ratio and cover the container */
+  z-index: 4;
+}
+
+.test-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 6rem 4rem;
+  gap: 1rem;
+  width: 100%;
+  max-width: 50rem;
+  max-height: 40rem;
+  min-height: 40rem;
+  z-index: 2;
+  position: absolute;
+}
+
+.test-content h2 {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+
+.test-content p {
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 1;
 }
