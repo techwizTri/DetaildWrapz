@@ -1,3 +1,7 @@
+/**************************/
+/* GALLERY SLIDE SECTION */
+/**************************/
+
 .galslide-container {
   height: 40rem;
   width: 100%;
@@ -38,4 +42,14 @@
   text-align: left;
   font-size: 1.6rem;
   line-height: 1;
+}
+
+.gallery-imgbox {
+  width: 28rem;
+  height: 28rem;
+}
+
+.gallery-imgbox img {
+  width: 100%;
+  height: auto;
 }
