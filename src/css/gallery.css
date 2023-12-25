@@ -44,9 +44,20 @@
   line-height: 1;
 }
 
+/**************************/
+/* GALLERY MAIN SECTION */
+/**************************/
+
+.gallery-projects {
+}
+
+.galprojects {
+  gap: 2rem;
+}
+
 .gallery-imgbox {
-  width: 28rem;
-  height: 28rem;
+  width: 26rem;
+  height: 26rem;
 }
 
 .gallery-imgbox img {
