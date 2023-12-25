@@ -2,14 +2,14 @@
 /* SECTION ABOUT */
 /**************************/
 
+.about-content {
+  text-align: center;
+  padding: 8rem 6rem;
+}
+
 .section-about {
   background-color: #fdfdf8;
   color: #000;
-}
-
-.about-content {
-  text-align: center;
-  padding: 0 4rem;
 }
 
 .about-header {

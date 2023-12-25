@@ -27,11 +27,16 @@
   position: absolute;
 }
 
-.test-content h2 {
+.test-content h1 {
+  font-size: 4.4rem;
+  line-height: 1;
+}
+
+.test-content h3 {
   text-align: left;
   text-transform: uppercase;
-  font-size: 4rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 500;
   color: #fff;
   line-height: 1;
 }
