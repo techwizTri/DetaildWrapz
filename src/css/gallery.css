@@ -7,9 +7,9 @@
 }
 
 .test-container img {
-  width: 100%; /* Fill the entire width of the container */
-  height: auto; /* Let the height adjust automatically to maintain aspect ratio */
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   z-index: 4;
 }
 
