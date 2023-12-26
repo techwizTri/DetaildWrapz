@@ -3,7 +3,7 @@
 /**************************/
 
 .galslide-container {
-  height: 40rem;
+  height: 44rem;
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
@@ -18,8 +18,8 @@
   gap: 1rem;
   width: 100%;
   max-width: 50rem;
-  max-height: 40rem;
-  min-height: 40rem;
+  max-height: 38rem;
+  min-height: 38rem;
   z-index: 2;
   position: absolute;
 }
@@ -69,4 +69,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-90%, 100%);
+}
+
+.gallery-imgbox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.495);
+}
+
+.gallery-imgbox:hover::before {
+  background-color: transparent;
+  cursor: pointer;
 }
