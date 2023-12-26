@@ -56,9 +56,17 @@
 }
 
 .gallery-imgbox {
+  position: relative;
 }
 
 .gallery-imgbox img {
   width: 100%;
-  height: auto;
+  height: 100%;
+}
+
+.gallery-imgbox p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-90%, 100%);
 }
