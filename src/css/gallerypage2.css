@@ -1,0 +1,11 @@
+.projectslide-container {
+  display: flex;
+  height: 26rem;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 4;
+}
+
+.projectslide-header {
+}
