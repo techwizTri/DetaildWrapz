@@ -1,21 +1,10 @@
 .projectslide-container {
-  /* display: flex;
-  height: 26rem;
-  width: 20%;
-  overflow: hidden;
-  min-width: 50%; */
-  transform: skewX(-25deg);
-  background-color: white;
-  /* right: 75%; */
-  width: 100%;
-  height: 26rem;
-  background-color: aliceblue;
-  /* --tw-skew-x: -25deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); */
-  right: 75%;
   position: absolute;
+  width: 60%;
+  height: 26rem;
+  right: 50%;
+  background-color: rgb(21, 21, 21);
+  transform: skewX(-25deg);
 }
 
 .projectslide-header {
@@ -23,5 +12,13 @@
 
 .projectslide-img {
   display: flex;
+  justify-content: right;
+  width: 100%;
   height: 26rem;
+}
+
+.projectslide-img img {
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
 }
