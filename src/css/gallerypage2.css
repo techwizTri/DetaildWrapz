@@ -39,3 +39,16 @@
 /**************************/
 /* SECTION GALLERIES */
 /**************************/
+
+.project-body {
+  background-color: rgb(238, 237, 237);
+}
+
+.gallery-imgs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-imgs img {
+  width: 20%;
+}
