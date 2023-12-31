@@ -8,15 +8,20 @@
 }
 
 .projectslide-header {
-  padding-left: 16rem;
-  font-size: 2.4rem;
-  width: 80%;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* transform: skewX(25deg); */
+}
+
+.projectslide-header h1 {
+  font-size: 2.4rem;
   line-height: 1.2;
-  transform: skewX(25deg);
+  padding-left: 12rem;
+  transform: skew(25deg);
+  width: 80%;
 }
 
 .projectslide-img {
