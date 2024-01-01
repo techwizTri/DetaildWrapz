@@ -44,7 +44,15 @@
   background-color: rgb(238, 237, 237);
 }
 
-.projectimg,
+.gallery-imgbox {
+  transition: transform 0.4s ease;
+}
+
 .gallery-imgbox::before {
   background-color: rgba(0, 0, 0, 0);
+}
+
+.projectimg,
+.gallery-imgbox:hover {
+  transform: scale(1.06);
 }
