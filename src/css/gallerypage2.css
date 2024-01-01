@@ -40,10 +40,11 @@
 /* SECTION GALLERIES */
 /**************************/
 
-/* .project-body {
+.project-body {
   background-color: rgb(238, 237, 237);
 }
 
+/*
 .project-galleries {
   gap: 2rem;
 }
@@ -55,9 +56,7 @@
   width: 24%;
 } */
 
-/* .project-body {
-  background-color: rgb(238, 237, 237);
-}
+/*
 
 .project-galleries {
 }
