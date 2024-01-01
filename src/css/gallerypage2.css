@@ -56,3 +56,8 @@
 .gallery-imgbox:hover {
   transform: scale(1.06);
 }
+
+.project-footer h2 {
+  font-size: 2.2rem;
+  padding: 2rem 0;
+}
