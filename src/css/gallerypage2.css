@@ -40,15 +40,28 @@
 /* SECTION GALLERIES */
 /**************************/
 
-.project-body {
+/* .project-body {
   background-color: rgb(238, 237, 237);
 }
 
-.gallery-imgs {
-  display: flex;
-  justify-content: space-between;
+.project-galleries {
+  gap: 2rem;
 }
 
-.gallery-imgs img {
-  width: 20%;
+.gallery-imgs {
 }
+
+.gallery-imgs {
+  width: 24%;
+} */
+
+/* .project-body {
+  background-color: rgb(238, 237, 237);
+}
+
+.project-galleries {
+}
+
+.gallery-imgs {
+  max-width: 24%;
+} */
