@@ -103,5 +103,18 @@
   transform: skewX(-25deg);
 }
 
-.share-links {
+.share-links,
+.container {
+  padding: 10rem 0;
+}
+
+.share-header {
+  display: flex;
+  justify-content: center;
+  color: #000;
+}
+
+.share-icons {
+  display: flex;
+  justify-content: center;
 }
