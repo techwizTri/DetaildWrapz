@@ -121,6 +121,15 @@
   justify-content: center;
 }
 
-.share-icons ion-icon:hover {
+.share-footerlink:link,
+.share-footerlink:visited {
+  font-size: 1.2rem;
+  color: #555;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.share-footerlink:hover,
+.share-footerlink:active {
   color: #000;
 }
