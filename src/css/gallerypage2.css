@@ -103,18 +103,24 @@
   transform: skewX(-25deg);
 }
 
-.share-links,
-.container {
-  padding: 10rem 0;
+.share-links {
+  padding: 8.3rem 0;
 }
 
 .share-header {
   display: flex;
   justify-content: center;
-  color: #000;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #c92a2a;
+  padding: 1rem 0;
 }
 
 .share-icons {
   display: flex;
   justify-content: center;
+}
+
+.share-icons ion-icon:hover {
+  color: #000;
 }
