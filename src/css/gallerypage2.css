@@ -131,5 +131,6 @@
 
 .share-footerlink:hover,
 .share-footerlink:active {
-  color: #000;
+  /* color: #000; */
+  color: #c92a2a;
 }
