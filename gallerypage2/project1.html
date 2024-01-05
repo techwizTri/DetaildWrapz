@@ -26,6 +26,8 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
+    <script type="module" src="../src/js/galllerypage2.js"></script>
+
     <title>detaildwrapz</title>
   </head>
   <body>
@@ -192,13 +194,32 @@
         <!-- Section free inspection quotes -->
       </section>
 
-      <section class="gallery-projects project-footer container">
+      <section class="project-footer gallery-projects container">
         <div>
           <h2>EXPLORE MORE DETAILDWRAPZ PROJECTS</h2>
         </div>
+
         <div class="galprojects grid grid--3-cols">
-          <a class="gallery-imgbox" href="../gallerypage2/project16.html">
+          <!-- <a
+            class="gallery-imgbox"
+            href="../gallerypage2/project16.html"
+            onclick="showImage('../src/img/gallery/projects/img16.webp')"
+          >
             <img src="../src/img/gallery/projects/img16.webp" />
+            <p>
+              DUCATI PANIGALE V4 – PAINT PROTECTION FILM (PPF), CERAMIC COATING
+            </p>
+          </a> -->
+
+          <a
+            class="gallery-imgbox"
+            href="#"
+            onclick="showImage('../src/img/gallery/projects/img16.webp')"
+          >
+            <img
+              src="../src/img/gallery/projects/img16.webp"
+              alt="Ducati Panigale V4"
+            />
             <p>
               DUCATI PANIGALE V4 – PAINT PROTECTION FILM (PPF), CERAMIC COATING
             </p>
@@ -218,6 +239,12 @@
           </a>
         </div>
       </section>
+
+      <!-- Modal HTML -->
+      <!-- <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" class="modal-content" />
+      </div> -->
 
       <section class="share-slide">
         <div class="shareslide-container"></div>
