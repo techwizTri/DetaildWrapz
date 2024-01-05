@@ -12,3 +12,11 @@
 //   // Close the modal
 //   document.getElementById("imageModal").style.display = "none";
 // }
+
+const gallery = document.querySelectorAll(".gallery-modal");
+
+gallery.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    console.log("clcked");
+  });
+});
