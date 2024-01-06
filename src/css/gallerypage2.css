@@ -136,3 +136,27 @@
 }
 
 /* modal */
+/* Full screen image styles 
+=================================== */
+
+.scroll-disabled {
+  height: 100%;
+  overflow: hidden;
+}
+.img-full-screen,
+.img-placeholder {
+  cursor: pointer;
+}
+.img-placeholder {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #ffffbb;
+  z-index: 999;
+}
