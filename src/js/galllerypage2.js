@@ -1,17 +1,3 @@
-"use strict";
-// // Add these JavaScript functions to your existing script
-// function showImage(src) {
-//   // Display the modal
-//   document.getElementById("imageModal").style.display = "block";
-
-//   // Set the image source in the modal
-//   document.getElementById("modalImage").src = src;
-// }
-
-// function closeModal() {
-//   // Close the modal
-//   document.getElementById("imageModal").style.display = "none";
-// }
 // Makes the clicked image full screen (uses a <div> with a background image)
 document.querySelectorAll(".img-full-screen").forEach(function (element) {
   element.addEventListener("click", function () {
@@ -27,7 +13,8 @@ document.querySelectorAll(".img-full-screen").forEach(function (element) {
       );
 
     // Get image path source
-    let imagePath = this.getAttribute("src");
+    let imagePath = this.querySelector("img").getAttribute("src");
+    console.log(imagePath);
 
     // Set image path source
     document.querySelector(".img-placeholder").style.backgroundImage =
