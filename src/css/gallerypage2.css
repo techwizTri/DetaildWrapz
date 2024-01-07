@@ -145,7 +145,7 @@
 }
 .img-full-screen,
 .img-placeholder {
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .img-placeholder {
   position: fixed;
@@ -154,9 +154,9 @@
   bottom: 0;
   left: 0;
   display: none;
-  background-size: 50%;
+  background-size: 56%;
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: rgba(21, 21, 21, 0.904);
+  background-color: rgba(21, 21, 21, 0.95);
   z-index: 999;
 }

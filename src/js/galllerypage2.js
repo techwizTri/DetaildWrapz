@@ -1,6 +1,9 @@
-// Makes the clicked image full screen (uses a <div> with a background image)
+"use script";
+
 document.querySelectorAll(".img-full-screen").forEach(function (element) {
   element.addEventListener("click", function () {
+    element.style.cursor = "pointer";
+
     // Prevents scrolling
     document.body.classList.add("scroll-disabled");
 
