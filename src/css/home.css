@@ -885,6 +885,7 @@
 .subscribe-btn-container:hover {
   color: #000;
   background-color: #fff;
+  transition: all 0.3s;
 }
 
 .subscribe-btn-container a {

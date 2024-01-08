@@ -3,6 +3,7 @@
 /**************************/
 /* OPEN MODAL*/
 /**************************/
+
 let imagePath;
 
 document.querySelectorAll(".img-full-screen").forEach(function (element) {
