@@ -178,16 +178,9 @@
   transition: all 0.3s;
 }
 
-.left-arrow,
-.right-arrow svg {
-  /* width: 2.2%;
-  cursor: pointer;
-  color: #555; */
-}
-
 .left-arrow svg {
   position: fixed;
-  width: 2.2%;
+  width: 2.4%;
   cursor: pointer;
   color: #555;
   top: 50%;
@@ -195,12 +188,22 @@
   transform: translateY(-50%);
 }
 
+.left-arrow svg:hover {
+  color: #fff;
+  transition: all 0.3s;
+}
+
 .right-arrow svg {
   position: fixed;
-  width: 2.2%;
+  width: 2.4%;
   cursor: pointer;
   color: #555;
   top: 50%;
   right: 40px;
   transform: translateY(-50%);
+}
+
+.right-arrow svg:hover {
+  color: #fff;
+  transition: all 0.3s;
 }
