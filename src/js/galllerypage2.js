@@ -3,6 +3,7 @@
 /**************************/
 /* OPEN MODAL*/
 /**************************/
+let imagePath;
 
 document.querySelectorAll(".img-full-screen").forEach(function (element) {
   element.addEventListener("click", function () {
@@ -32,6 +33,10 @@ document.querySelectorAll(".img-full-screen").forEach(function (element) {
   });
 });
 
+/**************************/
+/* CLOSE MODAL*/
+/**************************/
+
 document
   .querySelector(".img-placeholder")
   .addEventListener("click", function () {
@@ -49,6 +54,10 @@ document
     // Hide image
     this.style.display = "none";
   });
+
+/**************************/
+/* NEXT IMAGE*/
+/**************************/
 
 /**************************/
 /* EXIT BUTTON*/
@@ -126,11 +135,6 @@ document.querySelector(".img-placeholder").appendChild(leftArrow);
 /**************************/
 /* RIGHT ARROW */
 /**************************/
-{
-  /* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-</svg> */
-}
 
 const rightArrow = document.createElement("div");
 rightArrow.className = "right-arrow";
