@@ -1,5 +1,9 @@
 "use script";
 
+/**************************/
+/* OPEN MODAL*/
+/**************************/
+
 document.querySelectorAll(".img-full-screen").forEach(function (element) {
   element.addEventListener("click", function () {
     element.style.cursor = "pointer";
@@ -46,6 +50,10 @@ document
     this.style.display = "none";
   });
 
+/**************************/
+/* EXIT BUTTON*/
+/**************************/
+
 const exitButton = document.createElement("div");
 exitButton.className = "exit-button";
 
@@ -78,3 +86,80 @@ exitButton.appendChild(svgElement);
 
 // Append the exitButton to the .img-placeholder element
 document.querySelector(".img-placeholder").appendChild(exitButton);
+
+/**************************/
+/* LEFT ARROW */
+/**************************/
+
+const leftArrow = document.createElement("div");
+leftArrow.className = "left-arrow";
+
+// Create an arrow SVG element
+const arrowLeftSvgElement = document.createElementNS(
+  "http://www.w3.org/2000/svg",
+  "svg"
+);
+arrowLeftSvgElement.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+arrowLeftSvgElement.setAttribute("fill", "none");
+arrowLeftSvgElement.setAttribute("viewBox", "0 0 24 24");
+arrowLeftSvgElement.setAttribute("stroke-width", "1.5");
+arrowLeftSvgElement.setAttribute("stroke", "currentColor");
+arrowLeftSvgElement.setAttribute("class", "w-6 h-6");
+
+// Create a path element inside the arrow SVG for the arrow icon
+const arrowLeftPathElement = document.createElementNS(
+  "http://www.w3.org/2000/svg",
+  "path"
+);
+arrowLeftPathElement.setAttribute("stroke-linecap", "round");
+arrowLeftPathElement.setAttribute("stroke-linejoin", "round");
+arrowLeftPathElement.setAttribute("d", "M15.75 19.5 8.25 12l7.5-7.5");
+
+// Append the path element to the arrow SVG
+arrowLeftSvgElement.appendChild(arrowLeftPathElement);
+
+leftArrow.appendChild(arrowLeftSvgElement);
+
+// Append the arrow SVG element to the body or any other desired container
+document.querySelector(".img-placeholder").appendChild(leftArrow);
+
+/**************************/
+/* RIGHT ARROW */
+/**************************/
+{
+  /* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+</svg> */
+}
+
+const rightArrow = document.createElement("div");
+rightArrow.className = "right-arrow";
+
+// Create an arrow SVG element
+const arrowRightSvgElement = document.createElementNS(
+  "http://www.w3.org/2000/svg",
+  "svg"
+);
+arrowRightSvgElement.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+arrowRightSvgElement.setAttribute("fill", "none");
+arrowRightSvgElement.setAttribute("viewBox", "0 0 24 24");
+arrowRightSvgElement.setAttribute("stroke-width", "1.5");
+arrowRightSvgElement.setAttribute("stroke", "currentColor");
+arrowRightSvgElement.setAttribute("class", "w-6 h-6");
+
+// Create a path element inside the arrow SVG for the arrow icon
+const arrowRightPathElement = document.createElementNS(
+  "http://www.w3.org/2000/svg",
+  "path"
+);
+arrowRightPathElement.setAttribute("stroke-linecap", "round");
+arrowRightPathElement.setAttribute("stroke-linejoin", "round");
+arrowRightPathElement.setAttribute("d", "m8.25 4.5 7.5 7.5-7.5 7.5");
+
+// Append the path element to the arrow SVG
+arrowRightSvgElement.appendChild(arrowRightPathElement);
+
+rightArrow.appendChild(arrowRightSvgElement);
+
+// Append the arrow SVG element to the body or any other desired container
+document.querySelector(".img-placeholder").appendChild(rightArrow);
