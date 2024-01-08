@@ -166,8 +166,14 @@
 /**************************/
 .exit-button svg {
   position: fixed;
+  color: #555;
   top: 20px;
   right: 20px;
   width: 2%;
   cursor: pointer;
+}
+
+.exit-button svg:hover {
+  color: #fff;
+  transition: all 0.3s;
 }
