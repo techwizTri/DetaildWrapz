@@ -160,3 +160,11 @@
   background-color: rgba(21, 21, 21, 0.95);
   z-index: 999;
 }
+
+/**************************/
+/* MODAL CONTENT SECTION */
+/**************************/
+.exit-button {
+  display: flex;
+  justify-content: end;
+}

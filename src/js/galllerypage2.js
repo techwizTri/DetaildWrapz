@@ -45,3 +45,36 @@ document
     // Hide image
     this.style.display = "none";
   });
+
+const exitButton = document.createElement("div");
+exitButton.className = "exit-button";
+
+// Create an SVG element
+const svgElement = document.createElementNS(
+  "http://www.w3.org/2000/svg",
+  "svg"
+);
+svgElement.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+svgElement.setAttribute("fill", "none");
+svgElement.setAttribute("viewBox", "0 0 24 24");
+svgElement.setAttribute("stroke-width", "1.5");
+svgElement.setAttribute("stroke", "currentColor");
+svgElement.setAttribute("class", "w-6 h-6");
+
+// Create a path element inside the SVG
+const pathElement = document.createElementNS(
+  "http://www.w3.org/2000/svg",
+  "path"
+);
+pathElement.setAttribute("stroke-linecap", "round");
+pathElement.setAttribute("stroke-linejoin", "round");
+pathElement.setAttribute("d", "M6 18 18 6M6 6l12 12");
+
+// Append the path element to the SVG
+svgElement.appendChild(pathElement);
+
+// Append the SVG element to the exitButton
+exitButton.appendChild(svgElement);
+
+// Append the exitButton to the .img-placeholder element
+document.querySelector(".img-placeholder").appendChild(exitButton);
