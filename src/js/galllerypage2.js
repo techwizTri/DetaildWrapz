@@ -4,51 +4,25 @@
 /* OPEN MODAL*/
 /**************************/
 
-// let imagePath;
-
-// const test = document.querySelectorAll(".img-full-screen");
-// console.log(test.length);
-
-// if (test.length >= 14) {
-//   const srcOf14thElement = test[13].querySelector("img").src;
-//   console.log("Src of the 14th element:", srcOf14thElement);
-// } else {
-//   console.log("There are fewer than 14 elements.");
-// }
-
-// document.querySelectorAll(".img-full-screen").forEach(function (element) {
-//   element.addEventListener("click", function () {
-//     element.style.cursor = "pointer";
-
-//     // Prevents scrolling
-//     document.body.classList.add("scroll-disabled");
-
-//     // Optional: Enables pinch and zoom
-//     document
-//       .querySelector("meta[name=viewport]")
-//       .setAttribute(
-//         "content",
-//         "width=device-width, initial-scale=1.00, minimum-scale=1.00, maximum-scale=2.00, user-scalable=yes"
-//       );
-
-//     // Get image path source
-//     let imagePath = this.querySelector("img").getAttribute("src");
-//     console.log(imagePath);
-
-//     // Set image path source
-//     document.querySelector(".img-placeholder").style.backgroundImage =
-//       "url(" + imagePath + ")";
-
-//     // Show image
-//     document.querySelector(".img-placeholder").style.display = "block";
-//   });
-// });
 const test = document.querySelectorAll(".img-full-screen");
 const testArray = [...test];
 
-testArray.forEach((element) => {
+let placeHolder = document.querySelector(".img-placeholder");
+let currentIndex = 0;
+
+testArray.forEach((element, index) => {
+  element.style.cursor = "pointer";
+
   element.addEventListener("click", () => {
     console.log("click");
+    currentIndex = index;
+    console.log(currentIndex);
+    let testImg = element.querySelector("img").getAttribute("src");
+    // showImage();
+    placeHolder.style.display = "block";
+    placeHolder.style.backgroundImage = `url(${testImg})`;
+
+    document.body.style.overflow = "hidden";
   });
 });
 
@@ -56,23 +30,10 @@ testArray.forEach((element) => {
 /* CLOSE MODAL*/
 /**************************/
 
-// document
-//   .querySelector(".img-placeholder")
-//   .addEventListener("click", function () {
-//     // Enables scrolling again
-//     document.body.classList.remove("scroll-disabled");
-
-//     // Optional: Disables pinch and zoom
-//     document
-//       .querySelector("meta[name=viewport]")
-//       .setAttribute(
-//         "content",
-//         "width=device-width, initial-scale=1.00, minimum-scale=1.00, maximum-scale=1.00"
-//       );
-
-//     // Hide image
-//     this.style.display = "none";
-//   });
+// placeHolder.addEventListener("click", () => {
+//   document.body.style.overflow = "auto";
+//   placeHolder.style.display = "none";
+// });
 
 /**************************/
 /* NEXT IMAGE*/
@@ -186,3 +147,23 @@ rightArrow.appendChild(arrowRightSvgElement);
 
 // Append the arrow SVG element to the body or any other desired container
 document.querySelector(".img-placeholder").appendChild(rightArrow);
+
+// function showImage() {
+//   let testImg = testArray[currentIndex]
+//     .querySelector("img")
+//     .getAttribute("src");
+//   placeHolder.style.display = "block";
+//   placeHolder.style.backgroundImage = `url(${testImg})`;
+// }
+
+rightArrow.addEventListener("click", () => {
+  console.log("click");
+  currentIndex = (currentIndex + 1) % testArray.length; // Move to the next image
+  // showImage();
+
+  let testImg = testArray[currentIndex]
+    .querySelector("img")
+    .getAttribute("src");
+  placeHolder.style.display = "block";
+  placeHolder.style.backgroundImage = `url(${testImg})`;
+});
