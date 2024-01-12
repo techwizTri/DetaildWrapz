@@ -1,85 +1,36 @@
 "use script";
 
 /**************************/
-/* OPEN MODAL*/
+/* RIGHT ARROW */
 /**************************/
 
-const test = document.querySelectorAll(".img-full-screen");
-const testArray = [...test];
+const rightArrow = document.createElement("div");
+rightArrow.className = "right-arrow";
 
-let placeHolder = document.querySelector(".img-placeholder");
-let currentIndex = 0;
-
-testArray.forEach((element, index) => {
-  element.style.cursor = "pointer";
-
-  element.addEventListener("click", () => {
-    console.log("click");
-    currentIndex = index;
-    console.log(currentIndex);
-    let testImg = element.querySelector("img").getAttribute("src");
-    // showImage();
-    placeHolder.style.display = "block";
-    placeHolder.style.backgroundImage = `url(${testImg})`;
-
-    document.body.style.overflow = "hidden";
-  });
-});
-
-/**************************/
-/* CLOSE MODAL*/
-/**************************/
-
-// placeHolder.addEventListener("click", () => {
-//   document.body.style.overflow = "auto";
-//   placeHolder.style.display = "none";
-// });
-
-// exitButton.addEventListener("click", () => {
-//   document.body.style.overflow = "auto";
-//   placeHolder.style.display = "none";
-// });
-
-/**************************/
-/* NEXT IMAGE*/
-/**************************/
-
-/**************************/
-/* EXIT BUTTON*/
-/**************************/
-
-const exitButton = document.createElement("div");
-exitButton.className = "exit-button";
-
-// Create an SVG element
-const svgElement = document.createElementNS(
+const arrowRightSvgElement = document.createElementNS(
   "http://www.w3.org/2000/svg",
   "svg"
 );
-svgElement.setAttribute("xmlns", "http://www.w3.org/2000/svg");
-svgElement.setAttribute("fill", "none");
-svgElement.setAttribute("viewBox", "0 0 24 24");
-svgElement.setAttribute("stroke-width", "1.5");
-svgElement.setAttribute("stroke", "currentColor");
-svgElement.setAttribute("class", "w-6 h-6");
+arrowRightSvgElement.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+arrowRightSvgElement.setAttribute("fill", "none");
+arrowRightSvgElement.setAttribute("viewBox", "0 0 24 24");
+arrowRightSvgElement.setAttribute("stroke-width", "1.5");
+arrowRightSvgElement.setAttribute("stroke", "currentColor");
+arrowRightSvgElement.setAttribute("class", "w-6 h-6");
 
-// Create a path element inside the SVG
-const pathElement = document.createElementNS(
+const arrowRightPathElement = document.createElementNS(
   "http://www.w3.org/2000/svg",
   "path"
 );
-pathElement.setAttribute("stroke-linecap", "round");
-pathElement.setAttribute("stroke-linejoin", "round");
-pathElement.setAttribute("d", "M6 18 18 6M6 6l12 12");
+arrowRightPathElement.setAttribute("stroke-linecap", "round");
+arrowRightPathElement.setAttribute("stroke-linejoin", "round");
+arrowRightPathElement.setAttribute("d", "m8.25 4.5 7.5 7.5-7.5 7.5");
 
-// Append the path element to the SVG
-svgElement.appendChild(pathElement);
+arrowRightSvgElement.appendChild(arrowRightPathElement);
 
-// Append the SVG element to the exitButton
-exitButton.appendChild(svgElement);
+rightArrow.appendChild(arrowRightSvgElement);
 
-// Append the exitButton to the .img-placeholder element
-document.querySelector(".img-placeholder").appendChild(exitButton);
+document.querySelector(".img-placeholder").appendChild(rightArrow);
 
 /**************************/
 /* LEFT ARROW */
@@ -118,78 +69,132 @@ leftArrow.appendChild(arrowLeftSvgElement);
 document.querySelector(".img-placeholder").appendChild(leftArrow);
 
 /**************************/
-/* RIGHT ARROW */
+/* Event Listeners for Arrows */
 /**************************/
 
-const rightArrow = document.createElement("div");
-rightArrow.className = "right-arrow";
+const test = document.querySelectorAll(".img-full-screen");
+const testArray = [...test];
 
-// Create an arrow SVG element
-const arrowRightSvgElement = document.createElementNS(
-  "http://www.w3.org/2000/svg",
-  "svg"
-);
-arrowRightSvgElement.setAttribute("xmlns", "http://www.w3.org/2000/svg");
-arrowRightSvgElement.setAttribute("fill", "none");
-arrowRightSvgElement.setAttribute("viewBox", "0 0 24 24");
-arrowRightSvgElement.setAttribute("stroke-width", "1.5");
-arrowRightSvgElement.setAttribute("stroke", "currentColor");
-arrowRightSvgElement.setAttribute("class", "w-6 h-6");
+let placeHolder = document.querySelector(".img-placeholder");
+let currentIndex = 0;
 
-// Create a path element inside the arrow SVG for the arrow icon
-const arrowRightPathElement = document.createElementNS(
-  "http://www.w3.org/2000/svg",
-  "path"
-);
-arrowRightPathElement.setAttribute("stroke-linecap", "round");
-arrowRightPathElement.setAttribute("stroke-linejoin", "round");
-arrowRightPathElement.setAttribute("d", "m8.25 4.5 7.5 7.5-7.5 7.5");
+testArray.forEach((element, index) => {
+  element.style.cursor = "pointer";
 
-// Append the path element to the arrow SVG
-arrowRightSvgElement.appendChild(arrowRightPathElement);
+  element.addEventListener("click", () => {
+    console.log("click");
+    currentIndex = index;
+    console.log(currentIndex);
+    let testImg = element.querySelector("img").getAttribute("src");
+    placeHolder.style.display = "block";
+    placeHolder.style.backgroundImage = `url(${testImg})`;
 
-rightArrow.appendChild(arrowRightSvgElement);
-
-// Append the arrow SVG element to the body or any other desired container
-document.querySelector(".img-placeholder").appendChild(rightArrow);
-
-// function showImage() {
-//   let testImg = testArray[currentIndex]
-//     .querySelector("img")
-//     .getAttribute("src");
-//   placeHolder.style.display = "block";
-//   placeHolder.style.backgroundImage = `url(${testImg})`;
-// }
+    document.body.style.overflow = "hidden";
+  });
+});
 
 rightArrow.addEventListener("click", () => {
-  console.log("right");
-  currentIndex = (currentIndex + 1) % testArray.length; // Move to the next image
-  // showImage();
+  currentIndex = (currentIndex + 1) % testArray.length;
+  console.log(currentIndex);
 
-  let testImg = testArray[currentIndex]
-    .querySelector("img")
-    .getAttribute("src");
-  placeHolder.style.display = "block";
-  placeHolder.style.backgroundImage = `url(${testImg})`;
+  showImage();
 });
 
 leftArrow.addEventListener("click", () => {
-  console.log("left");
+  currentIndex = (currentIndex - 1 + testArray.length) % testArray.length;
+  console.log(currentIndex);
+  showImage();
+});
 
-  if (currentIndex === 1) {
-    console.log("yeep");
-  }
+/**************************/
+/* Function to Display Image */
+/**************************/
 
-  currentIndex = (currentIndex - 1) % testArray.length;
-
+function showImage() {
   let testImg = testArray[currentIndex]
     .querySelector("img")
     .getAttribute("src");
-  placeHolder.style.display = "block";
   placeHolder.style.backgroundImage = `url(${testImg})`;
-});
+}
+
+// /**************************/
+// /* OPEN MODAL*/
+// /**************************/
+
+// const test = document.querySelectorAll(".img-full-screen");
+// const testArray = [...test];
+
+// let placeHolder = document.querySelector(".img-placeholder");
+// let currentIndex = 0;
+
+// testArray.forEach((element, index) => {
+//   element.style.cursor = "pointer";
+
+//   element.addEventListener("click", () => {
+//     console.log("click");
+//     currentIndex = index;
+//     console.log(currentIndex);
+//     let testImg = element.querySelector("img").getAttribute("src");
+//     // showImage();
+//     placeHolder.style.display = "block";
+//     placeHolder.style.backgroundImage = `url(${testImg})`;
+
+//     document.body.style.overflow = "hidden";
+//   });
+// });
+
+// /**************************/
+// /* CLOSE MODAL*/
+// /**************************/
+
+// /**************************/
+// /* NEXT IMAGE*/
+// /**************************/
+
+// /**************************/
+// /* EXIT BUTTON*/
+// /**************************/
+
+const exitButton = document.createElement("div");
+exitButton.className = "exit-button";
+
+const svgElement = document.createElementNS(
+  "http://www.w3.org/2000/svg",
+  "svg"
+);
+svgElement.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+svgElement.setAttribute("fill", "none");
+svgElement.setAttribute("viewBox", "0 0 24 24");
+svgElement.setAttribute("stroke-width", "1.5");
+svgElement.setAttribute("stroke", "currentColor");
+svgElement.setAttribute("class", "w-6 h-6");
+
+const pathElement = document.createElementNS(
+  "http://www.w3.org/2000/svg",
+  "path"
+);
+pathElement.setAttribute("stroke-linecap", "round");
+pathElement.setAttribute("stroke-linejoin", "round");
+pathElement.setAttribute("d", "M6 18 18 6M6 6l12 12");
+
+svgElement.appendChild(pathElement);
+
+exitButton.appendChild(svgElement);
+
+document.querySelector(".img-placeholder").appendChild(exitButton);
+
+// /**************************/
+// /* EXIT FUNCTION*/
+// /**************************/
 
 svgElement.addEventListener("click", () => {
   document.body.style.overflow = "auto";
   placeHolder.style.display = "none";
 });
+// /**************************/
+// /* LEFT ARROW */
+// /**************************/
+
+// /**************************/
+// /* RIGHT ARROW */
+// /**************************/
