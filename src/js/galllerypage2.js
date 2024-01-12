@@ -35,6 +35,11 @@ testArray.forEach((element, index) => {
 //   placeHolder.style.display = "none";
 // });
 
+// exitButton.addEventListener("click", () => {
+//   document.body.style.overflow = "auto";
+//   placeHolder.style.display = "none";
+// });
+
 /**************************/
 /* NEXT IMAGE*/
 /**************************/
@@ -166,4 +171,11 @@ rightArrow.addEventListener("click", () => {
     .getAttribute("src");
   placeHolder.style.display = "block";
   placeHolder.style.backgroundImage = `url(${testImg})`;
+});
+
+leftArrow.addEventListener();
+
+svgElement.addEventListener("click", () => {
+  document.body.style.overflow = "auto";
+  placeHolder.style.display = "none";
 });
