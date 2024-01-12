@@ -162,7 +162,7 @@ document.querySelector(".img-placeholder").appendChild(rightArrow);
 // }
 
 rightArrow.addEventListener("click", () => {
-  console.log("click");
+  console.log("right");
   currentIndex = (currentIndex + 1) % testArray.length; // Move to the next image
   // showImage();
 
@@ -173,7 +173,21 @@ rightArrow.addEventListener("click", () => {
   placeHolder.style.backgroundImage = `url(${testImg})`;
 });
 
-leftArrow.addEventListener();
+leftArrow.addEventListener("click", () => {
+  console.log("left");
+
+  if (currentIndex === 1) {
+    console.log("yeep");
+  }
+
+  currentIndex = (currentIndex - 1) % testArray.length;
+
+  let testImg = testArray[currentIndex]
+    .querySelector("img")
+    .getAttribute("src");
+  placeHolder.style.display = "block";
+  placeHolder.style.backgroundImage = `url(${testImg})`;
+});
 
 svgElement.addEventListener("click", () => {
   document.body.style.overflow = "auto";
