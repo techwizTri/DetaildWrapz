@@ -21,4 +21,10 @@
 }
 
 .quote-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-steps {
+  width: 100%;
 }
