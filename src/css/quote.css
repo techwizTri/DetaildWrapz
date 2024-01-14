@@ -47,3 +47,10 @@ input {
 .section-steps option {
   color: #000;
 }
+
+input:focus,
+select:focus {
+  border: 2px solid #c92a2a; /* Change the border color */
+  outline: none; /* Remove the default outline */
+  box-shadow: 0 0 5px #c92a2a;
+}
