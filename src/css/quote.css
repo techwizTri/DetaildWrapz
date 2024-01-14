@@ -28,3 +28,9 @@
 .section-steps {
   width: 100%;
 }
+
+.section-steps label {
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
