@@ -54,3 +54,7 @@ select:focus {
   outline: none; /* Remove the default outline */
   box-shadow: 0 0 5px #c92a2a;
 }
+
+.quote-info2 {
+  padding: 2rem;
+}
