@@ -70,4 +70,20 @@ select:focus {
 
 input[type="checkbox"] {
   height: auto;
+  border: none;
+  box-shadow: none;
+}
+
+.textbox-header h3 {
+  padding-top: 2rem;
+}
+
+.quote-textbox {
+  display: flex;
+  /* width: 100%; */
+}
+
+.quote-textbox input {
+  width: 100%;
+  height: 10rem;
 }
