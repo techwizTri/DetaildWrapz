@@ -34,3 +34,16 @@
   font-size: 1.2rem;
   font-weight: 700;
 }
+
+.section-steps select,
+input {
+  height: 2.8rem;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.section-steps option {
+  color: #000;
+}
