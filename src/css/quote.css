@@ -58,3 +58,16 @@ select:focus {
 .quote-info2 {
   padding: 2rem;
 }
+
+.checkbox-container {
+}
+
+.quote-checkbox {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-between;
+}
+
+input[type="checkbox"] {
+  height: auto;
+}
