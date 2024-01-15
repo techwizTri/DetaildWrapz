@@ -115,4 +115,10 @@ textarea:focus {
   border: 2px solid #c92a2a;
   cursor: pointer;
   border-radius: none;
+  transition: all 0.3s;
+}
+
+.quote-submit button:hover {
+  color: #000;
+  background-color: white;
 }
