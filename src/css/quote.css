@@ -80,20 +80,39 @@ input[type="checkbox"] {
 
 .quote-textbox {
   display: flex;
-  /* width: 100%; */
+  padding-bottom: 2rem;
 }
 
 .quote-textbox textarea {
   width: 100%;
-  height: 10rem;
+  height: 16rem;
   font-size: 1.2rem;
   background-color: transparent;
   color: #fff;
   border: 2px solid #fff;
+  resize: none;
 }
 
 textarea:focus {
   border: 2px solid #c92a2a;
   outline: none;
   box-shadow: 0 0 5px #c92a2a;
+}
+
+.quote-submit {
+  display: flex;
+  justify-content: end;
+  padding-top: 2rem;
+}
+
+.quote-submit button {
+  width: 8rem;
+  height: 4rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: transparent;
+  border: 2px solid #c92a2a;
+  cursor: pointer;
+  border-radius: none;
 }
