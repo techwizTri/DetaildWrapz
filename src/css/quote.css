@@ -121,4 +121,5 @@ textarea:focus {
 .quote-submit button:hover {
   color: #000;
   background-color: white;
+  box-shadow: 0 0 10px #c92a2a;
 }
