@@ -12,6 +12,7 @@
 
 .news-container {
   padding: 8rem;
+  gap: 2rem;
 }
 
 .news-imgbox {
