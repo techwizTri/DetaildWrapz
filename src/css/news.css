@@ -1,5 +1,13 @@
-body {
+.news-gallery {
   background-color: rgb(238, 237, 237);
+  color: #000;
+}
+
+.news-gallery h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 5px;
 }
 
 .news-container {
@@ -14,10 +22,10 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  cursor: pointer;
 }
 
 .news-imgbox h4 {
-  color: #000;
 }
 
 .news-imgbox p {
