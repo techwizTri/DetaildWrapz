@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(238, 237, 237);
+}
+
+.news-container {
+  padding: 8rem;
+}
+
+.news-imgbox {
+  position: relative;
+}
+
+.news-imgbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.news-imgbox h4 {
+  color: #000;
+}
+
+.news-imgbox p {
+  color: #666;
+}
