@@ -27,9 +27,13 @@
   cursor: pointer;
 }
 
-.news-imgbox h4 {
+.news-content {
+  padding: 2rem 0;
 }
 
-.news-imgbox p {
+.news-content h4 {
+}
+
+.news-content p {
   color: #666;
 }
