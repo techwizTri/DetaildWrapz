@@ -3,15 +3,16 @@
   color: #000;
 }
 
-.news-gallery h1 {
+.news-header h1 {
   text-align: center;
   font-size: 2rem;
   font-weight: 200;
   letter-spacing: 5px;
+  padding: 6rem;
 }
 
 .news-container {
-  padding: 8rem;
+  padding: 4rem 8rem;
   gap: 2rem;
 }
 
