@@ -1,1 +1,12 @@
+.project-slide {
+  /* overflow: hidden;
+  width: auto; */
+  height: 42rem;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
 
+.projectslide-container img {
+  display: flex;
+}
