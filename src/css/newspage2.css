@@ -1,12 +1,24 @@
-.project-slide {
-  /* overflow: hidden;
-  width: auto; */
-  height: 42rem;
+/* .project-slide {
+  height: 52rem;
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
+  background-color: aqua;
 }
 
 .projectslide-container img {
-  display: flex;
+} */
+
+.project-slide {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: aqua;
+}
+
+.projectslide-container img {
+  width: 100%; /* Set the desired width */
+  height: 1280px; /* Set the desired height */
+  display: block;
+  margin: 0 auto;
 }
