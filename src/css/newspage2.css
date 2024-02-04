@@ -1,4 +1,4 @@
-.projectslide-container {
+/* .projectslide-container {
   position: absolute;
   width: 60%;
   height: 46rem;
@@ -35,4 +35,13 @@
   width: 60%;
   height: 100%;
   object-fit: cover;
+} */
+
+.projectslide-img {
+  display: flex;
+  justify-content: center;
+}
+
+.projectslide-img img {
+  width: 100%;
 }
