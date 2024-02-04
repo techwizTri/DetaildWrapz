@@ -1,11 +1,11 @@
 .projectslide-container {
   position: absolute;
   width: 60%;
-  height: 42rem;
+  height: 46rem;
   right: 50%;
   background-color: rgb(21, 21, 21);
 
-  transform: skewX(-25deg);
+  transform: skewX(25deg);
 }
 
 .projectslide-header {
@@ -20,7 +20,7 @@
   font-size: 2.4rem;
   line-height: 1.2;
   padding-left: 12rem;
-  transform: skew(25deg);
+  transform: skew(-25deg);
   width: 80%;
 }
 
@@ -28,7 +28,7 @@
   display: flex;
   justify-content: right;
   width: 100%;
-  height: 42rem;
+  height: 46rem;
 }
 
 .projectslide-img img {
