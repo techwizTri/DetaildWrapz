@@ -4,6 +4,7 @@
   height: 42rem;
   right: 50%;
   background-color: rgb(21, 21, 21);
+
   transform: skewX(-25deg);
 }
 
@@ -31,7 +32,7 @@
 }
 
 .projectslide-img img {
-  width: 56%;
+  width: 60%;
   height: 100%;
   object-fit: cover;
 }
