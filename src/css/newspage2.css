@@ -1,7 +1,7 @@
-/* .projectslide-container {
+.projectslide-container {
   position: absolute;
   width: 60%;
-  height: 46rem;
+  height: 36rem;
   right: 50%;
   background-color: rgb(21, 21, 21);
 
@@ -28,20 +28,11 @@
   display: flex;
   justify-content: right;
   width: 100%;
-  height: 46rem;
+  height: 36rem;
 }
 
 .projectslide-img img {
   width: 60%;
   height: 100%;
   object-fit: cover;
-} */
-
-.projectslide-img {
-  display: flex;
-  justify-content: center;
-}
-
-.projectslide-img img {
-  width: 100%;
 }
