@@ -40,3 +40,7 @@
 /**************************/
 /* project-body */
 /**************************/
+
+.project-body h2 {
+  text-align: center;
+}
