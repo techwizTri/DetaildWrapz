@@ -41,8 +41,7 @@
 /* project-body */
 /**************************/
 
-.project-body h2 {
-}
-
-.project-body h3 {
+.body-left {
+  width: 75%;
+  padding-right: 8rem;
 }
