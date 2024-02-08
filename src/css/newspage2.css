@@ -46,16 +46,21 @@
   padding-right: 8rem;
 }
 
+.test-skew {
+  display: flex;
+  justify-content: space-between;
+}
+
 .body-left h2 {
   padding: 3rem 0;
 }
 
 .skew {
-  position: absolute;
-  width: 70%;
+  /* position: absolute; */
+  /* width: 70%;
   height: 2rem;
   top: 110%;
-  right: -15%;
+  right: -15%; */
   background-color: #c92a2a;
   transform: skewX(-25deg);
 }
