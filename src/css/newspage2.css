@@ -53,6 +53,8 @@
 
 .test-skew span {
   width: 100%;
+  transform: skewX(-25deg);
+  z-index: 4 !important;
 }
 
 .body-left h2 {
