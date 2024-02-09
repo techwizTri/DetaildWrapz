@@ -49,11 +49,12 @@
 .test-skew {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .test-skew span {
   width: 100%;
-  transform: skewX(-25deg);
+  font-size: 1.6rem;
 }
 
 .body-left h2 {
@@ -61,18 +62,10 @@
 }
 
 .skew {
-  /* position: absolute; */
-  /* width: 70%;
-  height: 2rem;
-  top: 110%;
-  right: -15%; */
-  /* background-color: #c92a2a;
-  transform: skewX(-25deg);
-  margin-right: -10px;
-  width: 40%; */
   background-color: #c92a2a;
-  transform: skewX(-25deg);
-  width: 70%;
+  /* transform: skewX(-25deg); */
+  transform: skewX(-25deg) translateX(10%);
+  width: 90%;
 }
 
 .body-left h3 {
