@@ -38,12 +38,15 @@
 }
 
 /**************************/
-/* project-body */
+/* project-body left */
 /**************************/
 
 .project-body {
   background-color: rgb(238, 237, 237);
   color: #000;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
 .body-left {
@@ -66,7 +69,6 @@
 
 .left-skew {
   background-color: #c92a2a;
-  /* transform: skewX(-25deg); */
   transform: skewX(-25deg) translateX(10%);
   width: 90%;
 }
@@ -83,3 +85,7 @@
 .body-img {
   width: 100%;
 }
+
+/**************************/
+/* project-body right */
+/**************************/
