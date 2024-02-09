@@ -69,9 +69,10 @@
 }
 
 .body-left h3 {
+  font-size: 1.6rem;
+  padding: 3rem 0;
 }
 
-.body-left h3,
 .body-left p {
   font-size: 1.2rem;
   padding: 2rem 0;
