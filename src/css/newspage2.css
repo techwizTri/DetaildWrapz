@@ -55,6 +55,7 @@
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  padding: 4rem 0;
 }
 
 .body-left span {
@@ -72,7 +73,6 @@
 
 .body-left h3 {
   font-size: 1.6rem;
-  padding-top: 4rem;
 }
 
 .body-left p {
