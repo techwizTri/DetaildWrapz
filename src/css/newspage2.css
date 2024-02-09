@@ -54,7 +54,6 @@
 .test-skew span {
   width: 100%;
   transform: skewX(-25deg);
-  z-index: 4 !important;
 }
 
 .body-left h2 {
@@ -72,8 +71,8 @@
   margin-right: -10px;
   width: 40%; */
   background-color: #c92a2a;
-  transform: skewX(-25deg, 0) translateX(10%);
-  width: 100%;
+  transform: skewX(-25deg);
+  width: 70%;
 }
 
 .body-left h3 {
