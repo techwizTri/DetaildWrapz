@@ -89,3 +89,15 @@
 /**************************/
 /* project-body right */
 /**************************/
+
+.body-right {
+  width: 28%;
+}
+
+.right-img {
+  width: 100%;
+}
+
+.right-img img {
+  width: 100%;
+}
