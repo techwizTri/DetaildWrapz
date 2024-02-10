@@ -94,6 +94,11 @@
   width: 28%;
 }
 
+.body-right h1 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
 .right-img {
   width: 100%;
 }
