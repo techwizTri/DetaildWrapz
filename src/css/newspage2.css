@@ -176,4 +176,8 @@
 
 .project-body2 {
   background-color: rgb(238, 237, 237);
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
 }
