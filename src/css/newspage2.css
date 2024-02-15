@@ -181,3 +181,16 @@
   justify-content: space-between;
   overflow: hidden;
 }
+
+.body2-left {
+  display: flex;
+  align-items: center;
+}
+
+.left2-heading {
+}
+
+.right-video video {
+  width: 80%;
+  height: auto;
+}
