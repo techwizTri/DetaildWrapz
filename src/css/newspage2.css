@@ -175,23 +175,23 @@
 /**************************/
 
 .project-body2 {
-  /* background-color: rgb(238, 237, 237); */
-  background-color: #c92a2a;
+  background-color: rgb(238, 237, 237);
   color: #000;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   overflow: hidden;
 }
 
 .body2-left {
-  display: flex;
-  align-items: center;
 }
 
 .left2-heading {
+  font-size: 2rem;
+  padding: 4rem 0;
 }
 
 .right-video video {
-  width: 80%;
-  height: auto;
+  width: 100%;
+  height: 40rem;
 }
