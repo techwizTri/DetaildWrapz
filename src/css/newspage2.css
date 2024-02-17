@@ -184,7 +184,7 @@
 }
 
 .body2-left {
-  margin-right: 40rem;
+  margin-right: 30rem;
 }
 
 .left2-heading {
@@ -201,6 +201,6 @@
 }
 
 .right-video video {
-  width: 100%;
+  width: auto;
   height: 40rem;
 }
