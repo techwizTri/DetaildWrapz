@@ -204,3 +204,17 @@
   width: auto;
   height: 40rem;
 }
+
+/**************************/
+/* body-footer */
+/**************************/
+
+.body-footer {
+  background-color: rgb(238, 237, 237);
+  color: #000;
+}
+
+.body-footer h2 {
+  font-size: 2rem;
+  text-align: center;
+}
