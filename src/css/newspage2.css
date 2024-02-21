@@ -214,8 +214,8 @@
   color: #000;
 }
 
-.body-footer h2 {
-  font-size: 2rem;
+.body-footerheading {
+  font-size: 2.4rem;
   text-align: center;
 }
 
@@ -227,4 +227,5 @@
 
 .news-imgbox {
   width: 30%;
+  padding: 0 2rem;
 }
