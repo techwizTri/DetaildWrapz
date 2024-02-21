@@ -218,3 +218,13 @@
   font-size: 2rem;
   text-align: center;
 }
+
+.news-container {
+  /* width: 60%; */
+  display: flex;
+  justify-content: center;
+}
+
+.news-imgbox {
+  width: 30%;
+}
