@@ -220,7 +220,6 @@
 }
 
 .news-container {
-  /* width: 60%; */
   display: flex;
   justify-content: center;
 }
